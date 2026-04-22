@@ -5,8 +5,8 @@ import { products, categories, galleryImages } from "@/lib/products";
 import ProductCard from "@/components/ui/ProductCard";
 
 const CATEGORY_EMOJI: Record<string, string> = {
-  "Karam Podi": "🌶️",
-  "Non‑Veg Pickle": "🍗",
+  "Karam Podi": "",
+  "Non‑Veg Pickle": "",
 };
 
 const CATEGORY_DESCRIPTION: Record<string, string> = {
@@ -18,7 +18,7 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero Banner ── */}
-      <section className="relative w-full overflow-hidden bg-amber-50" style={{ minHeight: "420px" }}>
+      <section className="relative w-full h-[100vh] overflow-hidden bg-amber-50">
         <Image
           src="/banner.png"
           alt="logo"
@@ -75,7 +75,6 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8 gap-3">
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-3xl">🌶️</span>
                 <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">Karam Podi</h2>
               </div>
               <p className="text-gray-500 text-sm max-w-lg">
@@ -112,7 +111,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col justify-center h-full">
           <div className="max-w-lg">
             <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-3 drop-shadow-lg">
-              🎁 Bulk Orders &amp; Gift Packs Available
+              Bulk Orders &amp; Gift Packs Available
             </h2>
             <p className="text-white/80 text-sm md:text-base mb-6">
               Perfect for weddings, festivals &amp; corporate gifting. Customised packing available on request.
@@ -133,7 +132,6 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8 gap-3">
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-3xl">🍗</span>
                 <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">Non-Veg Pickles</h2>
               </div>
               <p className="text-gray-500 text-sm max-w-lg">
@@ -185,13 +183,12 @@ export default function HomePage() {
           <p className="text-gray-500 text-sm text-center mb-10">Quality and trust in every jar</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { icon: "🌿", title: "No Preservatives", desc: "Pure and natural ingredients only. No artificial additives or colours." },
-              { icon: "🏠", title: "Homemade Hygiene", desc: "Prepared in a clean home kitchen following strict hygiene standards." },
-              { icon: "📦", title: "Fresh Packaging", desc: "Sealed and packed fresh on order to retain full flavour and nutrition." },
-              { icon: "🚚", title: "Quick Delivery", desc: "Ships within 24 hours. Free delivery on orders above ₹500." },
+              { title: "No Preservatives", desc: "Pure and natural ingredients only. No artificial additives or colours." },
+              { title: "Homemade Hygiene", desc: "Prepared in a clean home kitchen following strict hygiene standards." },
+              { title: "Fresh Packaging", desc: "Sealed and packed fresh on order to retain full flavour and nutrition." },
+              { title: "Quick Delivery", desc: "Ships within 24 hours. Free delivery on orders above ₹500." },
             ].map((item) => (
               <div key={item.title} className="bg-white border border-amber-100 rounded-2xl p-6 text-center hover:shadow-md transition-shadow">
-                <div className="text-4xl mb-3">{item.icon}</div>
                 <h3 className="font-bold text-gray-800 mb-2 text-sm">{item.title}</h3>
                 <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
