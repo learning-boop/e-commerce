@@ -62,9 +62,7 @@ export default function CheckoutPage() {
       <h1 className="text-3xl font-extrabold text-gray-900 mb-8">Checkout</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Form */}
         <form onSubmit={handleSubmit} className="lg:col-span-2 flex flex-col gap-8">
-          {/* Delivery details */}
           <div>
             <h2 className="text-lg font-bold text-gray-800 mb-4">Delivery Details</h2>
             <div className="grid grid-cols-2 gap-4">
@@ -87,7 +85,6 @@ export default function CheckoutPage() {
             </div>
           </div>
 
-          {/* Payment */}
           <div>
             <h2 className="text-lg font-bold text-gray-800 mb-4">Payment Method</h2>
             <div className="flex flex-col gap-3">
@@ -110,15 +107,14 @@ export default function CheckoutPage() {
           </button>
         </form>
 
-        {/* Order summary */}
         <div className="bg-amber-50 rounded-2xl p-6 h-fit border border-amber-100">
           <h2 className="text-base font-bold text-gray-900 mb-4">Your Order</h2>
           <div className="flex flex-col gap-3 mb-4">
             {items.map(({ product, quantity }) => (
-              <div key={product.product_id} className="flex justify-between text-sm text-gray-600">
+              <div key={product.id} className="flex justify-between text-sm text-gray-600">
                 <span className="truncate max-w-[160px] leading-tight">
                   {product.name}
-                  <span className="block text-xs text-gray-400">{product.net_weight_g}g × {quantity}</span>
+                  <span className="block text-xs text-gray-400">× {quantity}</span>
                 </span>
                 <span className="font-bold text-gray-800 ml-2">
                   {product.mrp_inr ? formatPrice(product.mrp_inr * quantity) : "—"}

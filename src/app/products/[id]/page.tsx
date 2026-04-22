@@ -1,7 +1,6 @@
 "use client";
 
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import { ShoppingBag, ArrowLeft, Check, Package, Info } from "lucide-react";
 import Link from "next/link";
 import { getProductById, products, formatPrice } from "@/lib/products";
@@ -9,9 +8,12 @@ import { useCart } from "@/context/CartContext";
 import { useState, use } from "react";
 import ProductCard from "@/components/ui/ProductCard";
 
-const CATEGORY_EMOJI: Record<string, string> = {
-  "Karam Podi": "🌶️",
-  "Non‑Veg Pickle": "🍗",
+const CATEGORY_META: Record<string, { emoji: string; bg: string }> = {
+  "Karam Podi":      { emoji: "🌶️", bg: "from-orange-100 to-red-50" },
+  "Masala Powder":   { emoji: "🫙",  bg: "from-yellow-100 to-amber-50" },
+  "Ready Mix":       { emoji: "🥣",  bg: "from-green-100 to-emerald-50" },
+  "Delicious Sweet": { emoji: "🍬",  bg: "from-pink-100 to-rose-50" },
+  "Spicy Snack":     { emoji: "🍟",  bg: "from-amber-100 to-orange-50" },
 };
 
 export default function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
@@ -25,8 +27,10 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
   if (!product) notFound();
 
   const safeProduct = product!;
+  const meta = CATEGORY_META[safeProduct.category] ?? { emoji: "🍱", bg: "from-gray-100 to-gray-50" };
+
   const related = products
-    .filter((p) => p.category === safeProduct.category && p.product_id !== safeProduct.product_id)
+    .filter((p) => p.category === safeProduct.category && p.id !== safeProduct.id)
     .slice(0, 4);
 
   function handleAddToCart() {
@@ -42,18 +46,12 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
       </Link>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
-        {/* Image */}
-        <div className="relative aspect-[4/5] bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl overflow-hidden border border-amber-100">
-          {safeProduct.image_url ? (
-            <Image src={safeProduct.image_url} alt={product.name} fill className="object-cover" />
-          ) : (
-            <div className="w-full h-full flex flex-col items-center justify-center">
-              <span className="text-8xl mb-4">{CATEGORY_EMOJI[product.category] ?? "🍱"}</span>
-              <span className="text-sm text-amber-400 font-medium">Image Coming Soon</span>
-            </div>
-          )}
+        {/* Dummy image placeholder */}
+        <div className={`relative aspect-square bg-gradient-to-br ${meta.bg} rounded-3xl overflow-hidden border border-amber-100 flex flex-col items-center justify-center gap-3`}>
+          <span className="text-8xl drop-shadow">{meta.emoji}</span>
+          <span className="text-sm text-gray-400 font-medium">Image coming soon</span>
           <span className="absolute top-4 left-4 bg-white text-amber-700 text-xs px-3 py-1 rounded-full border border-amber-200 font-semibold shadow-sm">
-            {CATEGORY_EMOJI[safeProduct.category]} {safeProduct.category}
+            {meta.emoji} {safeProduct.category}
           </span>
         </div>
 
@@ -63,26 +61,34 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             {safeProduct.name}
           </h1>
 
-          <p className="text-gray-600 leading-relaxed text-sm mb-4">{safeProduct.description}</p>
+          {safeProduct.description && (
+            <p className="text-gray-600 leading-relaxed text-sm mb-4">{safeProduct.description}</p>
+          )}
 
           {/* Weight & Best Before */}
-          <div className="flex gap-4 mb-5">
-            <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-2 text-center">
-              <p className="text-xs text-gray-500 mb-0.5">Net Weight</p>
-              <p className="text-sm font-bold text-gray-800">{safeProduct.net_weight_g}g</p>
+          {(safeProduct.net_weight_g || safeProduct.best_before) && (
+            <div className="flex gap-4 mb-5 flex-wrap">
+              {safeProduct.net_weight_g && (
+                <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-2 text-center">
+                  <p className="text-xs text-gray-500 mb-0.5">Net Weight</p>
+                  <p className="text-sm font-bold text-gray-800">{safeProduct.net_weight_g}g</p>
+                </div>
+              )}
+              {safeProduct.best_before && (
+                <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-2 text-center">
+                  <p className="text-xs text-gray-500 mb-0.5">Best Before</p>
+                  <p className="text-sm font-bold text-gray-800">{safeProduct.best_before}</p>
+                </div>
+              )}
             </div>
-            <div className="bg-amber-50 border border-amber-100 rounded-xl px-4 py-2 text-center">
-              <p className="text-xs text-gray-500 mb-0.5">Best Before</p>
-              <p className="text-sm font-bold text-gray-800">{safeProduct.best_before}</p>
-            </div>
-          </div>
+          )}
 
           {/* Price */}
           <div className="flex items-end gap-3 mb-6">
             {safeProduct.mrp_inr ? (
               <span className="text-3xl font-extrabold text-gray-900">{formatPrice(safeProduct.mrp_inr)}</span>
             ) : (
-              <span className="text-xl font-bold text-amber-700">Price on request</span>
+              <span className="text-lg font-semibold text-amber-700">Contact us for pricing</span>
             )}
           </div>
 
@@ -113,20 +119,22 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
       </div>
 
       {/* Ingredients */}
-      <div className="mt-12">
-        <div className="bg-white border border-gray-100 rounded-2xl p-6">
-          <h3 className="text-base font-bold text-gray-800 mb-4 flex items-center gap-2">
-            <Info size={16} className="text-amber-600" /> Ingredients
-          </h3>
-          <div className="flex flex-wrap gap-2">
-            {safeProduct.ingredients.map((ing) => (
-              <span key={ing} className="text-xs bg-amber-50 border border-amber-100 text-amber-800 px-3 py-1 rounded-full">
-                {ing}
-              </span>
-            ))}
+      {safeProduct.ingredients && safeProduct.ingredients.length > 0 && (
+        <div className="mt-12">
+          <div className="bg-white border border-gray-100 rounded-2xl p-6">
+            <h3 className="text-base font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <Info size={16} className="text-amber-600" /> Ingredients
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {safeProduct.ingredients.map((ing) => (
+                <span key={ing} className="text-xs bg-amber-50 border border-amber-100 text-amber-800 px-3 py-1 rounded-full">
+                  {ing}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Related */}
       {related.length > 0 && (
@@ -134,7 +142,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
           <h2 className="text-xl font-bold text-gray-900 mb-6">You May Also Like</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {related.map((p) => (
-              <ProductCard key={p.product_id} product={p} />
+              <ProductCard key={p.id} product={p} />
             ))}
           </div>
         </div>

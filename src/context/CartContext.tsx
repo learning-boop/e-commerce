@@ -15,10 +15,10 @@ type Action =
 function cartReducer(state: CartItem[], action: Action): CartItem[] {
   switch (action.type) {
     case "ADD": {
-      const existing = state.find((i) => i.product.product_id === action.product.product_id);
+      const existing = state.find((i) => i.product.id === action.product.id);
       if (existing) {
         return state.map((i) =>
-          i.product.product_id === action.product.product_id
+          i.product.id === action.product.id
             ? { ...i, quantity: i.quantity + action.quantity }
             : i
         );
@@ -26,10 +26,10 @@ function cartReducer(state: CartItem[], action: Action): CartItem[] {
       return [...state, { product: action.product, quantity: action.quantity }];
     }
     case "REMOVE":
-      return state.filter((i) => i.product.product_id !== action.productId);
+      return state.filter((i) => i.product.id !== action.productId);
     case "UPDATE":
       return state.map((i) =>
-        i.product.product_id === action.productId ? { ...i, quantity: action.quantity } : i
+        i.product.id === action.productId ? { ...i, quantity: action.quantity } : i
       );
     case "CLEAR":
       return [];

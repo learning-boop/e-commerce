@@ -1,0 +1,1014 @@
+{
+  "brand": {
+    "name": "Naaris Home Foods",
+    "telugu": "నారీస్ హోం ఫుడ్స్",
+    "tagline": "Paramparya Ruchulu (Traditional Tastes)",
+    "quality_badges": [
+      "Hygienic Home Made",
+      "Traditional Taste",
+      "100% Fresh Ingredients",
+      "Freshly Ground",
+      "No Preservatives"
+    ],
+    "address": {
+      "line1": "Pappula Mill Center",
+      "area": "Ashok Nagar",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91 63036 72956"
+    },
+    "shipping": "Global Shipping Available"
+  },
+  "metadata": {
+    "merged_from": [
+      "Naaris Home Foods brochure images",
+      "product_data_from_images.json"
+    ],
+    "total_categories": 8,
+    "total_products": 61,
+    "products_with_full_details": 7,
+    "products_brochure_only": 54,
+    "schema_version": "1.0",
+    "notes": [
+      "Products marked has_full_details=false are from the brochure only and need descriptions, ingredients, and pricing filled in.",
+      "Variants array collapses weight-based SKUs (e.g. Chicken Pickle 250g and 1kg) under a single product.",
+      "'Avise Ginjala Karam Podi' (brochure) and 'Avisaginjala Karam Podi' (detailed JSON) were merged as the same product."
+    ]
+  },
+  "categories": [
+    {
+      "id": "karam-podis",
+      "name": "Karam Podis",
+      "telugu": "కారం పొడులు",
+      "description": "Traditional Andhra spice-and-lentil powders, freshly ground with no preservatives.",
+      "products": [
+        {
+          "product_id": "NHF-VERUSENAGA-KARAM-PODI",
+          "name": "Verusenaga Karam Podi",
+          "slug": "verusenaga-karam-podi",
+          "category_id": "karam-podis",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-NALLA-KARAM-PODI",
+          "name": "Nalla Karam Podi",
+          "slug": "nalla-karam-podi",
+          "category_id": "karam-podis",
+          "description": "Homemade black‑gram spice powder prepared with hygienic methods and traditional taste using fresh ingredients.",
+          "ingredients": [
+            "Black Gram Dal",
+            "Garlic Cloves",
+            "Dried Red Chillies",
+            "Coriander Seeds",
+            "Cumin Seeds",
+            "Tamarind",
+            "Salt"
+          ],
+          "variants": [
+            {
+              "sku": "NHF-NALLA-KARAM-PODI",
+              "net_weight_g": 100,
+              "mrp_inr": 80,
+              "image_file_id": "file-HsqSEGv9ffvgG9wVxzSEyV"
+            }
+          ],
+          "best_before": "6 months from manufacturing",
+          "image_file_id": "file-HsqSEGv9ffvgG9wVxzSEyV",
+          "has_full_details": true,
+          "source": "both"
+        },
+        {
+          "product_id": "NHF-KANDI-KARAM-PODI",
+          "name": "Kandi Karam Podi",
+          "slug": "kandi-karam-podi",
+          "category_id": "karam-podis",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-NUVVULA-KARAM-PODI",
+          "name": "Nuvvula Karam Podi",
+          "slug": "nuvvula-karam-podi",
+          "category_id": "karam-podis",
+          "description": "Homemade sesame spice powder rich in protein and healthy fats.",
+          "ingredients": [
+            "Sesame Seeds",
+            "Red Chilies",
+            "Garlic",
+            "Cumin",
+            "Urad Dal",
+            "Salt",
+            "Tamarind",
+            "Oil"
+          ],
+          "variants": [
+            {
+              "sku": "NHF-NUVVULA-KARAM-PODI",
+              "net_weight_g": 100,
+              "mrp_inr": 80,
+              "image_file_id": "file-FfqbDyPCTMfseL9NHaW4tT"
+            }
+          ],
+          "best_before": "6 months from manufacturing",
+          "image_file_id": "file-FfqbDyPCTMfseL9NHaW4tT",
+          "has_full_details": true,
+          "source": "both"
+        },
+        {
+          "product_id": "NHF-KARIVEPAKU-KARAM-PODI",
+          "name": "Karivepaku Karam Podi",
+          "slug": "karivepaku-karam-podi",
+          "category_id": "karam-podis",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-MUNAGAKU-KARAM-PODI",
+          "name": "Munagaku Karam Podi",
+          "slug": "munagaku-karam-podi",
+          "category_id": "karam-podis",
+          "description": "Homemade moringa (drumstick leaves) spice powder prepared with fresh curry leaves and lentils.",
+          "ingredients": [
+            "Drumstick Leaves",
+            "Chana Dal",
+            "Urad Dal",
+            "Dried Red Chilies",
+            "Cumin",
+            "Tamarind",
+            "Oil",
+            "Salt"
+          ],
+          "variants": [
+            {
+              "sku": "NHF-MUNAGAKU-KARAM-PODI",
+              "net_weight_g": 100,
+              "mrp_inr": 80,
+              "image_file_id": "file-5XRJ5aqKBdiU5LAxf4i8LB"
+            }
+          ],
+          "best_before": "6 months from manufacturing",
+          "image_file_id": "file-5XRJ5aqKBdiU5LAxf4i8LB",
+          "has_full_details": true,
+          "source": "both"
+        },
+        {
+          "product_id": "NHF-VELLULLI-KARAM-PODI",
+          "name": "Vellulli Karam Podi",
+          "slug": "vellulli-karam-podi",
+          "category_id": "karam-podis",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-PUDINA-KARAM-PODI",
+          "name": "Pudina Karam Podi",
+          "slug": "pudina-karam-podi",
+          "category_id": "karam-podis",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-KOTHIMEERA-KARAM-PODI",
+          "name": "Kothimeera Karam Podi",
+          "slug": "kothimeera-karam-podi",
+          "category_id": "karam-podis",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-KAKARAKAYA-KARAM-PODI",
+          "name": "Kakarakaya Karam Podi",
+          "slug": "kakarakaya-karam-podi",
+          "category_id": "karam-podis",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-AVISAGINJALA-KARAM-PODI",
+          "name": "Avise Ginjala Karam Podi",
+          "slug": "avise-ginjala-karam-podi",
+          "category_id": "karam-podis",
+          "description": "Flaxseed‑based spice powder that promotes heart health and helps with weight management.",
+          "ingredients": [
+            "Toasted Flaxseeds",
+            "Dried Red Chilies",
+            "Urad Dal",
+            "Chana Dal",
+            "Coriander Seeds",
+            "Cumin Seeds",
+            "Garlic",
+            "Tamarind",
+            "Salt"
+          ],
+          "variants": [
+            {
+              "sku": "NHF-AVISAGINJALA-KARAM-PODI",
+              "net_weight_g": 100,
+              "mrp_inr": 80,
+              "image_file_id": "file-X3uxCMgmx4TBhf4nQWvnWv"
+            }
+          ],
+          "best_before": "6 months from manufacturing",
+          "image_file_id": "file-X3uxCMgmx4TBhf4nQWvnWv",
+          "has_full_details": true,
+          "source": "both"
+        },
+        {
+          "product_id": "NHF-KOBBARI-KARAM-PODI",
+          "name": "Kobbari Karam Podi",
+          "slug": "kobbari-karam-podi",
+          "category_id": "karam-podis",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-PUTNALA-PODI",
+          "name": "Putnala Podi",
+          "slug": "putnala-podi",
+          "category_id": "karam-podis",
+          "description": "Protein‑rich roasted Bengal‑gram powder for seasoning and condiments.",
+          "ingredients": [
+            "Roasted Bengal Gram",
+            "Red Chili Powder",
+            "Garlic",
+            "Cumin",
+            "Salt",
+            "Oil"
+          ],
+          "variants": [
+            {
+              "sku": "NHF-PUTNALA-PODI",
+              "net_weight_g": 100,
+              "mrp_inr": 80,
+              "image_file_id": "file-2SPhkqtL1Uc89wrS1sp5Td"
+            }
+          ],
+          "best_before": "6 months from manufacturing",
+          "image_file_id": "file-2SPhkqtL1Uc89wrS1sp5Td",
+          "has_full_details": true,
+          "source": "detailed_json"
+        },
+        {
+          "product_id": "NHF-SENAGAPPU-KARAM-PODI",
+          "name": "Senagappu Karam Podi",
+          "slug": "senagappu-karam-podi",
+          "category_id": "karam-podis",
+          "description": "Bengal‑gram spice powder rich in protein and fibre.",
+          "ingredients": [
+            "Roasted Bengal Gram",
+            "Red Chili Powder",
+            "Garlic",
+            "Cumin",
+            "Dried Coconut Powder",
+            "Salt",
+            "Oil"
+          ],
+          "variants": [
+            {
+              "sku": "NHF-SENAGAPPU-KARAM-PODI",
+              "net_weight_g": 100,
+              "mrp_inr": 80,
+              "image_file_id": "file-DyaaDvXKgPdEyfdMYhYyxL"
+            }
+          ],
+          "best_before": "6 months from manufacturing",
+          "image_file_id": "file-DyaaDvXKgPdEyfdMYhYyxL",
+          "has_full_details": true,
+          "source": "detailed_json"
+        }
+      ]
+    },
+    {
+      "id": "masala-powders",
+      "name": "Masala Powders",
+      "telugu": "మసాలా పొడులు",
+      "description": "Freshly ground masala and single-spice powders.",
+      "products": [
+        {
+          "product_id": "NHF-SAMBAR-POWDER",
+          "name": "Sambar Powder",
+          "slug": "sambar-powder",
+          "category_id": "masala-powders",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-RASAM-POWDER",
+          "name": "Rasam Powder",
+          "slug": "rasam-powder",
+          "category_id": "masala-powders",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-BIRYANI-MASALA",
+          "name": "Biryani Masala",
+          "slug": "biryani-masala",
+          "category_id": "masala-powders",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-JEERA-POWDER",
+          "name": "Jeera Powder",
+          "slug": "jeera-powder",
+          "category_id": "masala-powders",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-DHANIYA-POWDER",
+          "name": "Dhaniya Powder",
+          "slug": "dhaniya-powder",
+          "category_id": "masala-powders",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-ORGANIC-PASUPU-TURMERIC",
+          "name": "Organic Pasupu (Turmeric)",
+          "slug": "organic-pasupu-turmeric",
+          "category_id": "masala-powders",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-DRIED-MANGO-POWDER",
+          "name": "Dried Mango Powder",
+          "slug": "dried-mango-powder",
+          "category_id": "masala-powders",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-DRIED-MUNAGAKU-POWDER",
+          "name": "Dried Munagaku Powder",
+          "slug": "dried-munagaku-powder",
+          "category_id": "masala-powders",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        }
+      ]
+    },
+    {
+      "id": "ready-mixes",
+      "name": "Ready Mixes",
+      "telugu": "రెడీ మిక్సెస్",
+      "description": "Instant mixes for quick preparation of traditional dishes.",
+      "products": [
+        {
+          "product_id": "NHF-PALLI-CHUTNEY-READY-MIX",
+          "name": "Palli Chutney Ready Mix",
+          "slug": "palli-chutney-ready-mix",
+          "category_id": "ready-mixes",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-KOBBARI-CHUTNEY-READY-MIX",
+          "name": "Kobbari Chutney Ready Mix",
+          "slug": "kobbari-chutney-ready-mix",
+          "category_id": "ready-mixes",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-UPMA-READY-MIX",
+          "name": "Upma Ready Mix",
+          "slug": "upma-ready-mix",
+          "category_id": "ready-mixes",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-PULIHORA-READY-MIX",
+          "name": "Pulihora Ready Mix",
+          "slug": "pulihora-ready-mix",
+          "category_id": "ready-mixes",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-SAMBAR-READY-MIX",
+          "name": "Sambar Ready Mix",
+          "slug": "sambar-ready-mix",
+          "category_id": "ready-mixes",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-RASAM-READY-MIX",
+          "name": "Rasam Ready Mix",
+          "slug": "rasam-ready-mix",
+          "category_id": "ready-mixes",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-PONGAL-READY-MIX",
+          "name": "Pongal Ready Mix",
+          "slug": "pongal-ready-mix",
+          "category_id": "ready-mixes",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        }
+      ]
+    },
+    {
+      "id": "sweets",
+      "name": "Delicious Sweets",
+      "telugu": "తీపి పదార్థాలు",
+      "description": "Homemade traditional sweets using ghee, jaggery, and fresh ingredients.",
+      "products": [
+        {
+          "product_id": "NHF-BELLAM-GAVVALU",
+          "name": "Bellam Gavvalu",
+          "slug": "bellam-gavvalu",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-GORMITI-GORUMITILU",
+          "name": "Gormiti / Gorumitilu",
+          "slug": "gormiti-gorumitilu",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-KAJJIKAYALU",
+          "name": "Kajjikayalu",
+          "slug": "kajjikayalu",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-SUNNUNDALU-URAD-DAL",
+          "name": "Sunnundalu (Urad Dal)",
+          "slug": "sunnundalu-urad-dal",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-BOONDHI-MITHAI",
+          "name": "Boondhi Mithai",
+          "slug": "boondhi-mithai",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-PEANUT-LADOO-GROUND-NUT-CHIKKI",
+          "name": "Peanut Ladoo / Ground Nut Chikki",
+          "slug": "peanut-ladoo-ground-nut-chikki",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-MULTIGRAIN-CHIKKI",
+          "name": "Multigrain Chikki",
+          "slug": "multigrain-chikki",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-NETHI-RAVVA-LADDU",
+          "name": "Nethi Ravva Laddu",
+          "slug": "nethi-ravva-laddu",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-KOBBARI-UNDALU-JAGGERY-COCONUT-LADOO",
+          "name": "Kobbari Undalu (Jaggery Coconut Ladoo)",
+          "slug": "kobbari-undalu-jaggery-coconut-ladoo",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-BOONDI-LADDU",
+          "name": "Boondi Laddu",
+          "slug": "boondi-laddu",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-SWEET-BISCUITS-MAIDA-WHEAT",
+          "name": "Sweet Biscuits (Maida / Wheat)",
+          "slug": "sweet-biscuits-maida-wheat",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-MYSORE-PAK",
+          "name": "Mysore Pak",
+          "slug": "mysore-pak",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-NETHI-ARISELU",
+          "name": "Nethi Ariselu",
+          "slug": "nethi-ariselu",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-NUVVULA-NETHI-ARISELU",
+          "name": "Nuvvula Nethi Ariselu",
+          "slug": "nuvvula-nethi-ariselu",
+          "category_id": "sweets",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        }
+      ]
+    },
+    {
+      "id": "spicy-snacks",
+      "name": "Spicy Snacks",
+      "telugu": "కారం స్నాక్స్",
+      "description": "Crunchy savoury snacks in the traditional Andhra style.",
+      "products": [
+        {
+          "product_id": "NHF-CHEKKALU-KOTHIMEERANUVVULU",
+          "name": "Chekkalu (Kothimeera/Nuvvulu)",
+          "slug": "chekkalu-kothimeeranuvvulu",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-SPICY-RICE-CRACKERS",
+          "name": "Spicy Rice Crackers",
+          "slug": "spicy-rice-crackers",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-KARAPUSA",
+          "name": "Karapusa",
+          "slug": "karapusa",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-CHEKODI",
+          "name": "Chekodi",
+          "slug": "chekodi",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-KHARA-BOONDI",
+          "name": "Khara Boondi",
+          "slug": "khara-boondi",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-PALLI-PAKODA-GROUNDNUT-KAJU-PAKODA",
+          "name": "Palli Pakoda (Groundnut / Kaju Pakoda)",
+          "slug": "palli-pakoda-groundnut-kaju-pakoda",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-RIBBON-PAKODA",
+          "name": "Ribbon Pakoda",
+          "slug": "ribbon-pakoda",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-JANTIKALU",
+          "name": "Jantikalu",
+          "slug": "jantikalu",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-ATUKULA-MIXTURE",
+          "name": "Atukula Mixture",
+          "slug": "atukula-mixture",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-ANDHRA-MIXTURE",
+          "name": "Andhra Mixture",
+          "slug": "andhra-mixture",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-HOT-CHIPS-MAIDAWHEAT",
+          "name": "Hot Chips (Maida/Wheat)",
+          "slug": "hot-chips-maidawheat",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-MASALA-CASHEWPEANUT",
+          "name": "Masala (Cashew/Peanut)",
+          "slug": "masala-cashewpeanut",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-PROTEIN-MIXTURE-HEALTHY-CRUNCHY-SNACK",
+          "name": "Protein Mixture – Healthy & Crunchy Snack",
+          "slug": "protein-mixture-healthy-crunchy-snack",
+          "category_id": "spicy-snacks",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        }
+      ]
+    },
+    {
+      "id": "vadiyalu",
+      "name": "Vadiyalu (Sun-dried Fryums)",
+      "telugu": "వడియాలు",
+      "description": "Traditional, sun-dried, handmade Andhra fryums.",
+      "products": [
+        {
+          "product_id": "NHF-RICE-VADIYALU-BIYYAM",
+          "name": "Rice Vadiyalu (Biyyam)",
+          "slug": "rice-vadiyalu-biyyam",
+          "category_id": "vadiyalu",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-SAGO-VADIYALU-SAGGUBIYYAM",
+          "name": "Sago Vadiyalu (Saggubiyyam)",
+          "slug": "sago-vadiyalu-saggubiyyam",
+          "category_id": "vadiyalu",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-URAD-DAL-VADIYALU-MINAPA",
+          "name": "Urad Dal Vadiyalu (Minapa)",
+          "slug": "urad-dal-vadiyalu-minapa",
+          "category_id": "vadiyalu",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        },
+        {
+          "product_id": "NHF-PUMPKIN-VADIYALU-GUMMADIKAYA",
+          "name": "Pumpkin Vadiyalu (Gummadikaya)",
+          "slug": "pumpkin-vadiyalu-gummadikaya",
+          "category_id": "vadiyalu",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "brochure"
+        }
+      ]
+    },
+    {
+      "id": "pickles-veg",
+      "name": "Veg Pickles",
+      "telugu": "శాకాహార ఊరగాయలు",
+      "description": "Wide variety of traditional vegetarian pickles. Contact for available varieties.",
+      "products": []
+    },
+    {
+      "id": "pickles-nonveg",
+      "name": "Non-Veg Pickles",
+      "telugu": "మాంసాహార ఊరగాయలు",
+      "description": "Traditional non-vegetarian pickles made with fresh meat and aromatic spices.",
+      "products": [
+        {
+          "product_id": "NHF-CHICKEN-PICKLE",
+          "name": "Chicken Pickle",
+          "slug": "chicken-pickle",
+          "category_id": "pickles-nonveg",
+          "description": "Traditional spicy chicken pickle made with fresh chicken pieces and aromatic spices.",
+          "ingredients": [
+            "Chicken",
+            "Ginger–Garlic Paste",
+            "Red Chili Powder",
+            "Salt",
+            "Turmeric Powder",
+            "Spices",
+            "Groundnut Oil",
+            "Lemon Juice"
+          ],
+          "variants": [
+            {
+              "sku": "NHF-CHICKEN-PICKLE-250G",
+              "net_weight_g": 250,
+              "mrp_inr": 250,
+              "image_file_id": "file-WJ7rj62LtGnuU3zHBdZ48S"
+            },
+            {
+              "sku": "NHF-CHICKEN-PICKLE-1000G",
+              "net_weight_g": 1000,
+              "mrp_inr": 1000,
+              "image_file_id": "file-1yuZ9rx88VD4rgrKS3y9T3"
+            }
+          ],
+          "best_before": "1 month from manufacturing",
+          "image_file_id": "file-WJ7rj62LtGnuU3zHBdZ48S",
+          "has_full_details": true,
+          "source": "detailed_json"
+        }
+      ]
+    }
+  ]
+}

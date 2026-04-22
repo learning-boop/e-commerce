@@ -6,8 +6,11 @@ import { Trash2, ArrowRight, ShoppingBag } from "lucide-react";
 import { formatPrice } from "@/lib/products";
 
 const CATEGORY_EMOJI: Record<string, string> = {
-  "Karam Podi": "🌶️",
-  "Non‑Veg Pickle": "🍗",
+  "Karam Podi":      "🌶️",
+  "Masala Powder":   "🫙",
+  "Ready Mix":       "🥣",
+  "Delicious Sweet": "🍬",
+  "Spicy Snack":     "🍟",
 };
 
 export default function CartPage() {
@@ -43,26 +46,26 @@ export default function CartPage() {
         {/* Items */}
         <div className="lg:col-span-2 flex flex-col gap-4">
           {items.map(({ product, quantity }) => (
-            <div key={product.product_id} className="flex gap-4 bg-white border border-amber-100 rounded-2xl p-4 hover:border-amber-200 transition-colors">
-              <div className="w-20 h-24 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0 text-4xl">
+            <div key={product.id} className="flex gap-4 bg-white border border-amber-100 rounded-2xl p-4 hover:border-amber-200 transition-colors">
+              <div className="w-20 h-20 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0 text-4xl">
                 {CATEGORY_EMOJI[product.category] ?? "🍱"}
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-xs text-amber-600 font-medium">{product.category}</p>
                 <h3 className="text-sm font-bold text-gray-800 mt-0.5 line-clamp-2">{product.name}</h3>
-                <p className="text-xs text-gray-400 mt-0.5">{product.net_weight_g}g</p>
+                {product.net_weight_g && <p className="text-xs text-gray-400 mt-0.5">{product.net_weight_g}g</p>}
                 <p className="text-sm font-bold text-gray-900 mt-1">
-                  {product.mrp_inr ? formatPrice(product.mrp_inr) : "Price on request"}
+                  {product.mrp_inr ? formatPrice(product.mrp_inr) : "Contact for price"}
                 </p>
                 <div className="flex items-center gap-2 mt-3">
                   <div className="flex items-center border-2 border-gray-200 rounded-full overflow-hidden text-sm">
-                    <button onClick={() => updateQuantity(product.product_id, Math.max(1, quantity - 1))}
+                    <button onClick={() => updateQuantity(product.id, Math.max(1, quantity - 1))}
                       className="w-7 h-7 flex items-center justify-center text-gray-600 hover:bg-gray-50">−</button>
                     <span className="w-6 text-center font-bold">{quantity}</span>
-                    <button onClick={() => updateQuantity(product.product_id, quantity + 1)}
+                    <button onClick={() => updateQuantity(product.id, quantity + 1)}
                       className="w-7 h-7 flex items-center justify-center text-gray-600 hover:bg-gray-50">+</button>
                   </div>
-                  <button onClick={() => removeFromCart(product.product_id)}
+                  <button onClick={() => removeFromCart(product.id)}
                     className="text-gray-300 hover:text-red-400 transition-colors">
                     <Trash2 size={15} />
                   </button>
@@ -90,7 +93,7 @@ export default function CartPage() {
               {shipping === 0 ? "Free 🎉" : formatPrice(shipping)}
             </span>
           </div>
-          {totalPrice < 500 && totalPrice > 0 && (
+          {totalPrice > 0 && totalPrice < 500 && (
             <p className="text-xs text-amber-700 bg-amber-100 rounded-lg px-3 py-2 mb-2">
               Add {formatPrice(500 - totalPrice)} more for free delivery!
             </p>

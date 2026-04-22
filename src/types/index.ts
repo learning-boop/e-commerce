@@ -1,13 +1,12 @@
 export interface Product {
-  product_id: string;
+  id: string;
   name: string;
   category: string;
-  description: string;
-  ingredients: string[];
-  net_weight_g: number;
-  mrp_inr: number | null;
-  best_before: string;
-  image_file_id: string;
+  description?: string;
+  ingredients?: string[];
+  net_weight_g?: number;
+  mrp_inr?: number | null;
+  best_before?: string;
   image_url?: string | null;
 }
 

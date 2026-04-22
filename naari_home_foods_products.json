@@ -1,0 +1,274 @@
+{
+  "products": [
+    {
+      "id": "NHF-VERUSENAGA-KARAM-PODI",
+      "name": "Verusenaga Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-NALLA-KARAM-PODI",
+      "name": "Nalla Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-KANDI-KARAM-PODI",
+      "name": "Kandi Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-NUVVULA-KARAM-PODI",
+      "name": "Nuvvula Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-KARIVEPAKU-KARAM-PODI",
+      "name": "Karivepaku Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-MUNAGAKU-KARAM-PODI",
+      "name": "Munagaku Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-VELLULLI-KARAM-PODI",
+      "name": "Vellulli Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-PUDINA-KARAM-PODI",
+      "name": "Pudina Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-KOTHIMEERA-KARAM-PODI",
+      "name": "Kothimeera Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-KAKARAKAYA-KARAM-PODI",
+      "name": "Kakarakaya Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-AVISE-GINJALA-KARAM-PODI",
+      "name": "Avise Ginjala Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-KOBBARI-KARAM-PODI",
+      "name": "Kobbari Karam Podi",
+      "category": "Karam Podi"
+    },
+    {
+      "id": "NHF-SAMBAR-POWDER",
+      "name": "Sambar Powder",
+      "category": "Masala Powder"
+    },
+    {
+      "id": "NHF-RASAM-POWDER",
+      "name": "Rasam Powder",
+      "category": "Masala Powder"
+    },
+    {
+      "id": "NHF-BIRYANI-MASALA",
+      "name": "Biryani Masala",
+      "category": "Masala Powder"
+    },
+    {
+      "id": "NHF-JEERA-POWDER",
+      "name": "Jeera Powder",
+      "category": "Masala Powder"
+    },
+    {
+      "id": "NHF-DHANIYA-POWDER",
+      "name": "Dhaniya Powder",
+      "category": "Masala Powder"
+    },
+    {
+      "id": "NHF-ORGANIC-PASUPU",
+      "name": "Organic Pasupu (Turmeric)",
+      "category": "Masala Powder"
+    },
+    {
+      "id": "NHF-DRIED-MANGO-POWDER",
+      "name": "Dried Mango Powder",
+      "category": "Masala Powder"
+    },
+    {
+      "id": "NHF-DRIED-MUNAGAKU-POWDER",
+      "name": "Dried Munagaku Powder",
+      "category": "Masala Powder"
+    },
+    {
+      "id": "NHF-PALLI-CHUTNEY-READY-MIX",
+      "name": "Palli Chutney Ready Mix",
+      "category": "Ready Mix"
+    },
+    {
+      "id": "NHF-KOBBARI-CHUTNEY-READY-MIX",
+      "name": "Kobbari Chutney Ready Mix",
+      "category": "Ready Mix"
+    },
+    {
+      "id": "NHF-UPMA-READY-MIX",
+      "name": "Upma Ready Mix",
+      "category": "Ready Mix"
+    },
+    {
+      "id": "NHF-PULIHORA-READY-MIX",
+      "name": "Pulihora Ready Mix",
+      "category": "Ready Mix"
+    },
+    {
+      "id": "NHF-SAMBAR-READY-MIX",
+      "name": "Sambar Ready Mix",
+      "category": "Ready Mix"
+    },
+    {
+      "id": "NHF-RASAM-READY-MIX",
+      "name": "Rasam Ready Mix",
+      "category": "Ready Mix"
+    },
+    {
+      "id": "NHF-PONGAL-READY-MIX",
+      "name": "Pongal Ready Mix",
+      "category": "Ready Mix"
+    },
+    {
+      "id": "NHF-BELLAM-GAVVALU",
+      "name": "Bellam Gavvalu",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-GORMITI",
+      "name": "Gormiti / Gorumitlu",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-KAJJIKAYALU",
+      "name": "Kajjikayalu",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-SUNNUNDALU",
+      "name": "Sunnundalu (Urad Dal)",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-BOONDHI-MITHAI",
+      "name": "Boondhi Mithai",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-PEANUT-LADOO",
+      "name": "Peanut Ladoo / Ground Nut Chikki",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-MULTIGRAIN-CHIKKI",
+      "name": "Multigrain Chikki",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-NETHI-RAVVA-LADDU",
+      "name": "Nethi Ravva Laddu",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-KOBBARI-UNDALU",
+      "name": "Kobbari Undalu (Jaggery Coconut Ladoo)",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-BOONDI-LADDU",
+      "name": "Boondi Laddu",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-SWEET-BISCUITS",
+      "name": "Sweet Biscuits (Maida / WHEAT)",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-MYSORE-PAK",
+      "name": "Mysore Pak",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-NETHI-ARISELU",
+      "name": "Nethi Ariselu",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-NUVVULA-NETHI-ARISELU",
+      "name": "Nuvvula Nethi Ariselu",
+      "category": "Delicious Sweet"
+    },
+    {
+      "id": "NHF-CHEKKALU",
+      "name": "Chekkalu (Kothimeera/Nuvvulu)",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-SPICY-RICE-CRACKERS",
+      "name": "Spicy Rice Crackers",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-KARAPUSA",
+      "name": "Karapusa",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-CHEKODI",
+      "name": "Chekodi",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-KHARA-BOONDI",
+      "name": "Khara Boondi",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-PALLI-PAKODA",
+      "name": "Palli Pakoda (Groundnut / Kaju Pakoda)",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-RIBBON-PAKODA",
+      "name": "Ribbon Pakoda",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-JANTIKALU",
+      "name": "Jantikalu",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-ATUKULA-MIXTURE",
+      "name": "Atukula Mixture",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-ANDHRA-MIXTURE",
+      "name": "Andhra Mixture",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-HOT-CHIPS",
+      "name": "Hot Chips (Maida/Wheat)",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-MASALA",
+      "name": "Masala (Cashew/Peanut)",
+      "category": "Spicy Snack"
+    },
+    {
+      "id": "NHF-PROTEIN-MIXTURE",
+      "name": "Protein Mixture – Healthy & Crunchy Snack",
+      "category": "Spicy Snack"
+    }
+  ]
+}

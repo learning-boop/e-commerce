@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"D:/creative_touch/e-commerce\" && npx tsc --noEmit 2>&1)",
+      "Bash(cd \"D:/creative_touch/e-commerce\" && npx next build 2>&1 | tail -20)"
+    ]
+  }
+}
