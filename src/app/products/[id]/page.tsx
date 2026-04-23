@@ -3,6 +3,7 @@
 import { notFound } from "next/navigation";
 import { ShoppingBag, ArrowLeft, Check, Package, Info } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { getProductById, products, formatPrice } from "@/lib/products";
 import { useCart } from "@/context/CartContext";
 import { useState, use } from "react";
@@ -46,10 +47,22 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
       </Link>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
-        {/* Dummy image placeholder */}
-        <div className={`relative aspect-square bg-gradient-to-br ${meta.bg} rounded-3xl overflow-hidden border border-amber-100 flex flex-col items-center justify-center gap-3`}>
-          <span className="text-8xl drop-shadow">{meta.emoji}</span>
-          <span className="text-sm text-gray-400 font-medium">Image coming soon</span>
+        {/* Product image */}
+        <div className={`relative aspect-square bg-gradient-to-br ${meta.bg} rounded-3xl overflow-hidden border border-amber-100`}>
+          {safeProduct.image_url ? (
+            <Image
+              src={safeProduct.image_url}
+              alt={safeProduct.name}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <span className="text-8xl drop-shadow">{meta.emoji}</span>
+            </div>
+          )}
           <span className="absolute top-4 left-4 bg-white text-amber-700 text-xs px-3 py-1 rounded-full border border-amber-200 font-semibold shadow-sm">
             {meta.emoji} {safeProduct.category}
           </span>

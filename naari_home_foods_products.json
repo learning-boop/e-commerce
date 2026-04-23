@@ -3,272 +3,415 @@
     {
       "id": "NHF-VERUSENAGA-KARAM-PODI",
       "name": "Verusenaga Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/verusenaga-karam-podi/product59.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-NALLA-KARAM-PODI",
       "name": "Nalla Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/nalla-karam-podi/product32.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-KANDI-KARAM-PODI",
       "name": "Kandi Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/kandi-karam-podi/product20.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-NUVVULA-KARAM-PODI",
       "name": "Nuvvula Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/nuvvula-karam-podi/product35.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-KARIVEPAKU-KARAM-PODI",
       "name": "Karivepaku Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/karivepaku-karam-podi/product22.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-MUNAGAKU-KARAM-PODI",
       "name": "Munagaku Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/munagaku-karam-podi/product30.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-VELLULLI-KARAM-PODI",
       "name": "Vellulli Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/vellulli-karam-podi/product58.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-PUDINA-KARAM-PODI",
       "name": "Pudina Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/pudina-karam-podi/product43.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-KOTHIMEERA-KARAM-PODI",
       "name": "Kothimeera Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/kothimeera-karam-podi/product27.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-KAKARAKAYA-KARAM-PODI",
       "name": "Kakarakaya Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/kakarakaya-karam-podi/product19.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-AVISE-GINJALA-KARAM-PODI",
       "name": "Avise Ginjala Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/avise-ginjala-karam-podi/product3.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-KOBBARI-KARAM-PODI",
       "name": "Kobbari Karam Podi",
-      "category": "Karam Podi"
+      "category": "Karam Podi",
+      "image_url": "/images/kobbari-karam-podi/product25.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-SAMBAR-POWDER",
       "name": "Sambar Powder",
-      "category": "Masala Powder"
+      "category": "Masala Powder",
+      "image_url": "/images/sambar-powder/product51.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-RASAM-POWDER",
       "name": "Rasam Powder",
-      "category": "Masala Powder"
+      "category": "Masala Powder",
+      "image_url": "/images/rasam-powder/product46.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-BIRYANI-MASALA",
       "name": "Biryani Masala",
-      "category": "Masala Powder"
+      "category": "Masala Powder",
+      "image_url": "/images/biryani-masala/product5.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-JEERA-POWDER",
       "name": "Jeera Powder",
-      "category": "Masala Powder"
+      "category": "Masala Powder",
+      "image_url": "/images/jeera-powder/product17.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-DHANIYA-POWDER",
       "name": "Dhaniya Powder",
-      "category": "Masala Powder"
+      "category": "Masala Powder",
+      "image_url": "/images/dhaniya-powder/product11.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-ORGANIC-PASUPU",
       "name": "Organic Pasupu (Turmeric)",
-      "category": "Masala Powder"
+      "category": "Masala Powder",
+      "image_url": "/images/organic-pasupu/product37.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-DRIED-MANGO-POWDER",
       "name": "Dried Mango Powder",
-      "category": "Masala Powder"
+      "category": "Masala Powder",
+      "image_url": "/images/dried-mango-powder/product12.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-DRIED-MUNAGAKU-POWDER",
       "name": "Dried Munagaku Powder",
-      "category": "Masala Powder"
+      "category": "Masala Powder",
+      "image_url": "/images/dried-munagaku-powder/product13.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-PALLI-CHUTNEY-READY-MIX",
       "name": "Palli Chutney Ready Mix",
-      "category": "Ready Mix"
+      "category": "Ready Mix",
+      "image_url": "/images/palli-chutney-ready-mix/product38.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-KOBBARI-CHUTNEY-READY-MIX",
       "name": "Kobbari Chutney Ready Mix",
-      "category": "Ready Mix"
+      "category": "Ready Mix",
+      "image_url": "/images/kobbari-chutney-ready-mix/product24.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-UPMA-READY-MIX",
       "name": "Upma Ready Mix",
-      "category": "Ready Mix"
+      "category": "Ready Mix",
+      "image_url": "/images/upma-ready-mix/product56.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-PULIHORA-READY-MIX",
       "name": "Pulihora Ready Mix",
-      "category": "Ready Mix"
+      "category": "Ready Mix",
+      "image_url": "/images/pulihora-ready-mix/product44.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-SAMBAR-READY-MIX",
       "name": "Sambar Ready Mix",
-      "category": "Ready Mix"
+      "category": "Ready Mix",
+      "image_url": "/images/sambar-ready-mix/product52.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-RASAM-READY-MIX",
       "name": "Rasam Ready Mix",
-      "category": "Ready Mix"
+      "category": "Ready Mix",
+      "image_url": "/images/rasam-ready-mix/product47.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-PONGAL-READY-MIX",
       "name": "Pongal Ready Mix",
-      "category": "Ready Mix"
+      "category": "Ready Mix",
+      "image_url": "/images/pongal-ready-mix/product41.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-BELLAM-GAVVALU",
       "name": "Bellam Gavvalu",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/bellam-gavvalu/product4.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-GORMITI",
       "name": "Gormiti / Gorumitlu",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/gormiti/product14.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-KAJJIKAYALU",
       "name": "Kajjikayalu",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/kajjikayalu/product18.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-SUNNUNDALU",
       "name": "Sunnundalu (Urad Dal)",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/sunnundalu/product54.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-BOONDHI-MITHAI",
       "name": "Boondhi Mithai",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/boondhi-mithai/product6.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-PEANUT-LADOO",
       "name": "Peanut Ladoo / Ground Nut Chikki",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/peanut-ladoo/product40.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-MULTIGRAIN-CHIKKI",
       "name": "Multigrain Chikki",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/multigrain-chikki/product29.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-NETHI-RAVVA-LADDU",
       "name": "Nethi Ravva Laddu",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/nethi-ravva-laddu/product34.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-KOBBARI-UNDALU",
       "name": "Kobbari Undalu (Jaggery Coconut Ladoo)",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/kobbari-undalu/product26.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-BOONDI-LADDU",
       "name": "Boondi Laddu",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/boondi-laddu/product7.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-SWEET-BISCUITS",
       "name": "Sweet Biscuits (Maida / WHEAT)",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/sweet-biscuits/product55.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-MYSORE-PAK",
       "name": "Mysore Pak",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/mysore-pak/product31.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-NETHI-ARISELU",
       "name": "Nethi Ariselu",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/nethi-ariselu/product33.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-NUVVULA-NETHI-ARISELU",
       "name": "Nuvvula Nethi Ariselu",
-      "category": "Delicious Sweet"
+      "category": "Delicious Sweet",
+      "image_url": "/images/nuvvula-nethi-ariselu/product36.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-CHEKKALU",
       "name": "Chekkalu (Kothimeera/Nuvvulu)",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/chekkalu/product8.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-SPICY-RICE-CRACKERS",
       "name": "Spicy Rice Crackers",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/spicy-rice-crackers/product53.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-KARAPUSA",
       "name": "Karapusa",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/karapusa/product21.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-CHEKODI",
       "name": "Chekodi",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/chekodi/product9.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-KHARA-BOONDI",
       "name": "Khara Boondi",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/khara-boondi/product23.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-PALLI-PAKODA",
       "name": "Palli Pakoda (Groundnut / Kaju Pakoda)",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/palli-pakoda/product39.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-RIBBON-PAKODA",
       "name": "Ribbon Pakoda",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/ribbon-pakoda/product48.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-JANTIKALU",
       "name": "Jantikalu",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/jantikalu/product16.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-ATUKULA-MIXTURE",
       "name": "Atukula Mixture",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/atukula-mixture/product2.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-ANDHRA-MIXTURE",
       "name": "Andhra Mixture",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/andhra-mixture/product1.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-HOT-CHIPS",
       "name": "Hot Chips (Maida/Wheat)",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/hot-chips/product15.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-MASALA",
       "name": "Masala (Cashew/Peanut)",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/masala/product28.png",
+      "mrp_inr": 80
     },
     {
       "id": "NHF-PROTEIN-MIXTURE",
       "name": "Protein Mixture – Healthy & Crunchy Snack",
-      "category": "Spicy Snack"
+      "category": "Spicy Snack",
+      "image_url": "/images/protein-mixture/product42.png",
+      "mrp_inr": 80
+    },
+    {
+      "id": "NHF-RICE-VADIYALU-BIYYAM",
+      "name": "Rice Vadiyalu (Biyyam)",
+      "category": "Vadiyalu",
+      "image_url": "/images/rice-vadiyalu-biyyam/product49.png",
+      "mrp_inr": 80
+    },
+    {
+      "id": "NHF-SAGO-VADIYALU-SAGGUBIYYAM",
+      "name": "Sago Vadiyalu (Saggubiyyam)",
+      "category": "Vadiyalu",
+      "image_url": "/images/sago-vadiyalu-saggubiyyam/product50.png",
+      "mrp_inr": 80
+    },
+    {
+      "id": "NHF-URAD-DAL-VADIYALU-MINAPA",
+      "name": "Urad Dal Vadiyalu (Minapa)",
+      "category": "Vadiyalu",
+      "image_url": "/images/urad-dal-vadiyalu-minapa/product57.png",
+      "mrp_inr": 80
+    },
+    {
+      "id": "NHF-PUMPKIN-VADIYALU-GUMMADIKAYA",
+      "name": "Pumpkin Vadiyalu (Gummadikaya)",
+      "category": "Vadiyalu",
+      "image_url": "/images/pumpkin-vadiyalu-gummadikaya/product45.png",
+      "mrp_inr": 80
+    },
+    {
+      "id": "NHF-CHICKEN-PICKLE",
+      "name": "Chicken Pickle",
+      "category": "Non-Veg Pickle",
+      "image_url": "/images/chicken-pickle/product10.png",
+      "mrp_inr": 80
     }
   ]
 }

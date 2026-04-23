@@ -2,6 +2,7 @@
 
 import { useCart } from "@/context/CartContext";
 import Link from "next/link";
+import Image from "next/image";
 import { Trash2, ArrowRight, ShoppingBag } from "lucide-react";
 import { formatPrice } from "@/lib/products";
 
@@ -47,8 +48,12 @@ export default function CartPage() {
         <div className="lg:col-span-2 flex flex-col gap-4">
           {items.map(({ product, quantity }) => (
             <div key={product.id} className="flex gap-4 bg-white border border-amber-100 rounded-2xl p-4 hover:border-amber-200 transition-colors">
-              <div className="w-20 h-20 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0 text-4xl">
-                {CATEGORY_EMOJI[product.category] ?? "🍱"}
+              <div className="w-20 h-20 bg-amber-50 rounded-xl flex items-center justify-center flex-shrink-0 text-4xl overflow-hidden relative">
+                {product.image_url ? (
+                  <Image src={product.image_url} alt={product.name} fill className="object-cover" sizes="80px" />
+                ) : (
+                  CATEGORY_EMOJI[product.category] ?? "🍱"
+                )}
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-xs text-amber-600 font-medium">{product.category}</p>

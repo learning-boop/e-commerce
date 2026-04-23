@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useReducer, useEffect } from "react";
 import { CartContextType, CartItem, Product } from "@/types";
+import { products } from "@/lib/products";
 
 const CartContext = createContext<CartContextType | null>(null);
 
@@ -45,7 +46,17 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const saved = localStorage.getItem("nhf_cart");
-    if (saved) dispatch({ type: "LOAD", items: JSON.parse(saved) });
+    if (saved) {
+      const parsed: CartItem[] = JSON.parse(saved);
+      // Refresh product data from the catalog so prices are never stale
+      const refreshed = parsed
+        .map((item) => {
+          const fresh = products.find((p) => p.id === item.product.id);
+          return fresh ? { ...item, product: fresh } : null;
+        })
+        .filter((item): item is CartItem => item !== null);
+      dispatch({ type: "LOAD", items: refreshed });
+    }
   }, []);
 
   useEffect(() => {

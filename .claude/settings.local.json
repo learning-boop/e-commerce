@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(cd \"D:/creative_touch/e-commerce\" && npx tsc --noEmit 2>&1)",
-      "Bash(cd \"D:/creative_touch/e-commerce\" && npx next build 2>&1 | tail -20)"
+      "Bash(cd \"D:/creative_touch/e-commerce\" && npx next build 2>&1 | tail -20)",
+      "Bash(find \"D:/creative_touch/e-commerce/public/images\" -type d | while read dir; do touch \"$dir/.gitkeep\"; done && echo \"Done\")",
+      "Bash(cd \"D:/creative_touch/e-commerce\" && node -e \"\nconst fs = require\\('fs'\\);\nconst data = JSON.parse\\(fs.readFileSync\\('naari_home_foods_products.json', 'utf8'\\)\\);\ndata.products = data.products.map\\(p => \\({ ...p, mrp_inr: 80 }\\)\\);\nfs.writeFileSync\\('naari_home_foods_products.json', JSON.stringify\\(data, null, 2\\)\\);\nconsole.log\\('Updated', data.products.length, 'products with mrp_inr: 80'\\);\n\")"
     ]
   }
 }

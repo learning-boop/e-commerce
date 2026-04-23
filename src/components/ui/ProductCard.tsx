@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ShoppingBag } from "lucide-react";
 import { Product } from "@/types";
 import { useCart } from "@/context/CartContext";
@@ -22,12 +23,21 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <div className="group bg-white rounded-2xl overflow-hidden border border-amber-100 hover:shadow-lg hover:border-amber-300 transition-all duration-300 flex flex-col">
-      {/* Dummy image placeholder */}
+      {/* Product image */}
       <Link href={`/products/${product.id}`} className={`block relative aspect-[4/3] bg-gradient-to-br ${meta.bg} overflow-hidden flex-shrink-0`}>
-        <div className="w-full h-full flex flex-col items-center justify-center gap-2 group-hover:scale-105 transition-transform duration-500">
-          <span className="text-5xl drop-shadow">{meta.emoji}</span>
-          <span className={`text-xs font-semibold ${meta.text} opacity-60`}>Image coming soon</span>
-        </div>
+        {product.image_url ? (
+          <Image
+            src={product.image_url}
+            alt={product.name}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+          />
+        ) : (
+          <div className="w-full h-full flex flex-col items-center justify-center gap-2 group-hover:scale-105 transition-transform duration-500">
+            <span className="text-5xl drop-shadow">{meta.emoji}</span>
+          </div>
+        )}
         <span className="absolute top-2 left-2 bg-white/90 text-xs px-2 py-0.5 rounded-full border border-amber-100 font-medium shadow-sm text-gray-600">
           {meta.emoji} {product.category}
         </span>

@@ -31,20 +31,20 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
 
           {/* Brand: logo + name */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <Image
               src="/logo.png"
               alt="logo"
               width={220}
               height={76}
-              className="h-16 w-auto object-contain"
+              className="h-10 sm:h-14 md:h-16 w-auto object-contain"
               priority
             />
             <div className="flex flex-col leading-tight">
-              <span className="text-xl md:text-2xl font-extrabold text-amber-700 tracking-tight">
-                NAARIS Home Foods
+              <span className="text-sm sm:text-lg md:text-2xl font-extrabold text-amber-700 tracking-tight">
+                NAARIS WORLD Home Foods
               </span>
-              <span className="text-xs text-gray-400 tracking-wide">Homemade · Natural · Fresh</span>
+              <span className="text-[10px] sm:text-xs text-gray-400 tracking-wide">Homemade · Natural · Fresh</span>
             </div>
           </Link>
 
