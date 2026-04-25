@@ -412,6 +412,314 @@
       "category": "Non-Veg Pickle",
       "image_url": "/images/chicken-pickle/product10.png",
       "mrp_inr": 80
+    },
+    {
+      "id": "NHF-PUTNALA-PODI",
+      "name": "Putnala Podi",
+      "category": "Karam Podi",
+      "image_url": "/images/putnala-podi/product.png",
+      "mrp_inr": 80
+    },
+    {
+      "id": "NHF-SENAGAPPU-KARAM-PODI",
+      "name": "Senagappu Karam Podi",
+      "category": "Karam Podi",
+      "image_url": "/images/senagappu-karam-podi/product.png",
+      "mrp_inr": 80
+    },
+    {
+      "id": "NHF-PICKLE-COMBO-PACK",
+      "name": "Pickle Combo Pack",
+      "category": "NRI Special Products",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-KARAM-PODI-COMBO",
+      "name": "Karam Podi Combo",
+      "category": "NRI Special Products",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-READY-MIX-COMBO",
+      "name": "Ready Mix Combo",
+      "category": "NRI Special Products",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-SWEETS-SNACKS-COMBO",
+      "name": "Sweets & Snacks Combo",
+      "category": "NRI Special Products",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-CHICKEN-PICKLE-INTERNATIONAL-250G",
+      "name": "Chicken Pickle (International) – 250g",
+      "category": "International Shipping",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-CHICKEN-PICKLE-INTERNATIONAL-1KG",
+      "name": "Chicken Pickle (International) – 1kg",
+      "category": "International Shipping",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-KARAM-PODIS-INTERNATIONAL-SHIPPING-RANGE",
+      "name": "Karam Podis (International Shipping Range)",
+      "category": "International Shipping",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-MASALA-POWDERS-INTERNATIONAL-SHIPPING-RANGE",
+      "name": "Masala Powders (International Shipping Range)",
+      "category": "International Shipping",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-READY-MIX-ITEMS-INTERNATIONAL-SHIPPING-RANGE",
+      "name": "Ready Mix Items (International Shipping Range)",
+      "category": "International Shipping",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-ANDHRA-COMBO-PACK",
+      "name": "Andhra Combo Pack",
+      "category": "NRI Combo Packs",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-BREAKFAST-COMBO-UPMA-PONGAL-MIX",
+      "name": "Breakfast Combo (Upma, Pongal Mix)",
+      "category": "NRI Combo Packs",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-SPICE-COMBO-PACK",
+      "name": "Spice Combo Pack",
+      "category": "NRI Combo Packs",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-SNACK-COMBO-PACK",
+      "name": "Snack Combo Pack",
+      "category": "NRI Combo Packs",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-FESTIVAL-GIFT-BOX",
+      "name": "Festival Gift Box",
+      "category": "Gift Packs for Abroad",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-SWEETS-GIFT-PACK",
+      "name": "Sweets Gift Pack",
+      "category": "Gift Packs for Abroad",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-SNACKS-GIFT-PACK",
+      "name": "Snacks Gift Pack",
+      "category": "Gift Packs for Abroad",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-MIXED-ANDHRA-SPECIAL-BOX",
+      "name": "Mixed Andhra Special Box",
+      "category": "Gift Packs for Abroad",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-DIWALI-SWEETS-PACK",
+      "name": "Diwali Sweets Pack",
+      "category": "Festival Delivery (NRI)",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-SANKRANTI-SPECIAL-PACK",
+      "name": "Sankranti Special Pack",
+      "category": "Festival Delivery (NRI)",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-UGADI-SPECIAL-PACK",
+      "name": "Ugadi Special Pack",
+      "category": "Festival Delivery (NRI)",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-CUSTOM-GROCERY-ORDER",
+      "name": "Custom Grocery Order",
+      "category": "Virtual Shopping Service",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-FAMILY-DELIVERY-ORDER",
+      "name": "Family Delivery Order",
+      "category": "Virtual Shopping Service",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-FESTIVAL-CUSTOM-ORDER",
+      "name": "Festival Custom Order",
+      "category": "Virtual Shopping Service",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-COTTON-SAREES",
+      "name": "Cotton Sarees",
+      "category": "Sarees",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-SILK-SAREES",
+      "name": "Silk Sarees",
+      "category": "Sarees",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-DAILY-WEAR-SAREES",
+      "name": "Daily Wear Sarees",
+      "category": "Sarees",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-FESTIVE-SAREES",
+      "name": "Festive Sarees",
+      "category": "Sarees",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-ETHNIC-SETS",
+      "name": "Ethnic Sets",
+      "category": "Traditional Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-TRADITIONAL-DRESSES",
+      "name": "Traditional Dresses",
+      "category": "Traditional Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-HANDLOOM-WEAR",
+      "name": "Handloom Wear",
+      "category": "Traditional Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-MENS-KURTAS",
+      "name": "Men's Kurtas",
+      "category": "Kurtas & Ethnic Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-WOMENS-KURTIS",
+      "name": "Women's Kurtis",
+      "category": "Kurtas & Ethnic Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-KURTA-SETS",
+      "name": "Kurta Sets",
+      "category": "Kurtas & Ethnic Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-WEDDING-WEAR",
+      "name": "Wedding Wear",
+      "category": "Festive Collections",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-FESTIVAL-SPECIAL-DRESSES",
+      "name": "Festival Special Dresses",
+      "category": "Festive Collections",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-DESIGNER-WEAR",
+      "name": "Designer Wear",
+      "category": "Festive Collections",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-SAREES",
+      "name": "Sarees",
+      "category": "Women's Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-KURTIS",
+      "name": "Kurtis",
+      "category": "Women's Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-DRESS-MATERIALS",
+      "name": "Dress Materials",
+      "category": "Women's Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-KURTAS",
+      "name": "Kurtas",
+      "category": "Men's Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-TRADITIONAL-SETS",
+      "name": "Traditional Sets",
+      "category": "Men's Wear",
+      "image_url": "",
+      "mrp_inr": 0
+    },
+    {
+      "id": "NHF-CASUAL-ETHNIC-WEAR",
+      "name": "Casual Ethnic Wear",
+      "category": "Men's Wear",
+      "image_url": "",
+      "mrp_inr": 0
     }
   ]
 }

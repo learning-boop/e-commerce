@@ -27,15 +27,16 @@
       "NAARIS WORLD Home Foods brochure images",
       "product_data_from_images.json"
     ],
-    "total_categories": 8,
-    "total_products": 61,
+    "total_categories": 20,
+    "total_products": 103,
     "products_with_full_details": 7,
-    "products_brochure_only": 54,
+    "products_brochure_only": 96,
     "schema_version": "1.0",
     "notes": [
       "Products marked has_full_details=false are from the brochure only and need descriptions, ingredients, and pricing filled in.",
       "Variants array collapses weight-based SKUs (e.g. Chicken Pickle 250g and 1kg) under a single product.",
-      "'Avise Ginjala Karam Podi' (brochure) and 'Avisaginjala Karam Podi' (detailed JSON) were merged as the same product."
+      "'Avise Ginjala Karam Podi' (brochure) and 'Avisaginjala Karam Podi' (detailed JSON) were merged as the same product.",
+      "NRI and Clothing categories were added as a schema-compatible expansion. Each new product uses the same blank-details template as brochure-only items (description/ingredients/variants/pricing to be filled in). Categories carry an optional 'group' field ('nri' or 'clothing') to allow filtering in the UI."
     ]
   },
   "categories": [
@@ -1007,6 +1008,660 @@
           "image_file_id": "file-WJ7rj62LtGnuU3zHBdZ48S",
           "has_full_details": true,
           "source": "detailed_json"
+        }
+      ]
+    },
+    {
+      "id": "nri-special-products",
+      "name": "NRI Special Products",
+      "telugu": "ఎన్‌ఆర్‌ఐ ప్రత్యేక ఉత్పత్తులు",
+      "description": "Curated combo packs tailored for NRI customers — pickles, karam podis, ready mixes, and sweets & snacks bundled for easy overseas ordering.",
+      "group": "nri",
+      "products": [
+        {
+          "product_id": "NHF-PICKLE-COMBO-PACK",
+          "name": "Pickle Combo Pack",
+          "slug": "pickle-combo-pack",
+          "category_id": "nri-special-products",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-KARAM-PODI-COMBO",
+          "name": "Karam Podi Combo",
+          "slug": "karam-podi-combo",
+          "category_id": "nri-special-products",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-READY-MIX-COMBO",
+          "name": "Ready Mix Combo",
+          "slug": "ready-mix-combo",
+          "category_id": "nri-special-products",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-SWEETS-SNACKS-COMBO",
+          "name": "Sweets & Snacks Combo",
+          "slug": "sweets-snacks-combo",
+          "category_id": "nri-special-products",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "international-shipping",
+      "name": "International Shipping",
+      "telugu": "అంతర్జాతీయ షిప్పింగ్",
+      "description": "Products available for global shipping to NRI customers. Includes Chicken Pickle (250g / 1kg), all Karam Podis, Masala Powders, and Ready Mix items.",
+      "group": "nri",
+      "products": [
+        {
+          "product_id": "NHF-CHICKEN-PICKLE-INTERNATIONAL-250G",
+          "name": "Chicken Pickle (International) – 250g",
+          "slug": "chicken-pickle-international-250g",
+          "category_id": "international-shipping",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-CHICKEN-PICKLE-INTERNATIONAL-1KG",
+          "name": "Chicken Pickle (International) – 1kg",
+          "slug": "chicken-pickle-international-1kg",
+          "category_id": "international-shipping",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-KARAM-PODIS-INTERNATIONAL-SHIPPING-RANGE",
+          "name": "Karam Podis (International Shipping Range)",
+          "slug": "karam-podis-international-shipping-range",
+          "category_id": "international-shipping",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-MASALA-POWDERS-INTERNATIONAL-SHIPPING-RANGE",
+          "name": "Masala Powders (International Shipping Range)",
+          "slug": "masala-powders-international-shipping-range",
+          "category_id": "international-shipping",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-READY-MIX-ITEMS-INTERNATIONAL-SHIPPING-RANGE",
+          "name": "Ready Mix Items (International Shipping Range)",
+          "slug": "ready-mix-items-international-shipping-range",
+          "category_id": "international-shipping",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "nri-combo-packs",
+      "name": "NRI Combo Packs",
+      "telugu": "ఎన్‌ఆర్‌ఐ కాంబో ప్యాక్‌లు",
+      "description": "Themed combo packs — Andhra, breakfast, spice, and snacks — assembled for NRI households missing home flavours.",
+      "group": "nri",
+      "products": [
+        {
+          "product_id": "NHF-ANDHRA-COMBO-PACK",
+          "name": "Andhra Combo Pack",
+          "slug": "andhra-combo-pack",
+          "category_id": "nri-combo-packs",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-BREAKFAST-COMBO-UPMA-PONGAL-MIX",
+          "name": "Breakfast Combo (Upma, Pongal Mix)",
+          "slug": "breakfast-combo-upma-pongal-mix",
+          "category_id": "nri-combo-packs",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-SPICE-COMBO-PACK",
+          "name": "Spice Combo Pack",
+          "slug": "spice-combo-pack",
+          "category_id": "nri-combo-packs",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-SNACK-COMBO-PACK",
+          "name": "Snack Combo Pack",
+          "slug": "snack-combo-pack",
+          "category_id": "nri-combo-packs",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "gift-packs-abroad",
+      "name": "Gift Packs for Abroad",
+      "telugu": "విదేశాలకు గిఫ్ట్ ప్యాక్‌లు",
+      "description": "Ready-to-ship gift packs for festivals, celebrations, and milestone occasions abroad.",
+      "group": "nri",
+      "products": [
+        {
+          "product_id": "NHF-FESTIVAL-GIFT-BOX",
+          "name": "Festival Gift Box",
+          "slug": "festival-gift-box",
+          "category_id": "gift-packs-abroad",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-SWEETS-GIFT-PACK",
+          "name": "Sweets Gift Pack",
+          "slug": "sweets-gift-pack",
+          "category_id": "gift-packs-abroad",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-SNACKS-GIFT-PACK",
+          "name": "Snacks Gift Pack",
+          "slug": "snacks-gift-pack",
+          "category_id": "gift-packs-abroad",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-MIXED-ANDHRA-SPECIAL-BOX",
+          "name": "Mixed Andhra Special Box",
+          "slug": "mixed-andhra-special-box",
+          "category_id": "gift-packs-abroad",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "festival-delivery-nri",
+      "name": "Festival Delivery (NRI)",
+      "telugu": "పండుగ డెలివరీ (NRI)",
+      "description": "Festival-special packs timed for Diwali, Sankranti, and Ugadi delivery to international addresses.",
+      "group": "nri",
+      "products": [
+        {
+          "product_id": "NHF-DIWALI-SWEETS-PACK",
+          "name": "Diwali Sweets Pack",
+          "slug": "diwali-sweets-pack",
+          "category_id": "festival-delivery-nri",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-SANKRANTI-SPECIAL-PACK",
+          "name": "Sankranti Special Pack",
+          "slug": "sankranti-special-pack",
+          "category_id": "festival-delivery-nri",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-UGADI-SPECIAL-PACK",
+          "name": "Ugadi Special Pack",
+          "slug": "ugadi-special-pack",
+          "category_id": "festival-delivery-nri",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "virtual-shopping-service",
+      "name": "Virtual Shopping Service",
+      "telugu": "వర్చువల్ షాపింగ్ సర్వీస్",
+      "description": "Assisted shopping service — place custom grocery, family, or festival orders remotely and have them delivered to your home or family.",
+      "group": "nri",
+      "products": [
+        {
+          "product_id": "NHF-CUSTOM-GROCERY-ORDER",
+          "name": "Custom Grocery Order",
+          "slug": "custom-grocery-order",
+          "category_id": "virtual-shopping-service",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-FAMILY-DELIVERY-ORDER",
+          "name": "Family Delivery Order",
+          "slug": "family-delivery-order",
+          "category_id": "virtual-shopping-service",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-FESTIVAL-CUSTOM-ORDER",
+          "name": "Festival Custom Order",
+          "slug": "festival-custom-order",
+          "category_id": "virtual-shopping-service",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sarees",
+      "name": "Sarees",
+      "telugu": "చీరలు",
+      "description": "Handpicked cotton, silk, daily-wear, and festive sarees in traditional Andhra weaves.",
+      "group": "clothing",
+      "products": [
+        {
+          "product_id": "NHF-COTTON-SAREES",
+          "name": "Cotton Sarees",
+          "slug": "cotton-sarees",
+          "category_id": "sarees",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-SILK-SAREES",
+          "name": "Silk Sarees",
+          "slug": "silk-sarees",
+          "category_id": "sarees",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-DAILY-WEAR-SAREES",
+          "name": "Daily Wear Sarees",
+          "slug": "daily-wear-sarees",
+          "category_id": "sarees",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-FESTIVE-SAREES",
+          "name": "Festive Sarees",
+          "slug": "festive-sarees",
+          "category_id": "sarees",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "traditional-wear",
+      "name": "Traditional Wear",
+      "telugu": "సంప్రదాయ దుస్తులు",
+      "description": "Ethnic sets, traditional dresses, and handloom wear for cultural and everyday occasions.",
+      "group": "clothing",
+      "products": [
+        {
+          "product_id": "NHF-ETHNIC-SETS",
+          "name": "Ethnic Sets",
+          "slug": "ethnic-sets",
+          "category_id": "traditional-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-TRADITIONAL-DRESSES",
+          "name": "Traditional Dresses",
+          "slug": "traditional-dresses",
+          "category_id": "traditional-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-HANDLOOM-WEAR",
+          "name": "Handloom Wear",
+          "slug": "handloom-wear",
+          "category_id": "traditional-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "kurtas-ethnic-wear",
+      "name": "Kurtas & Ethnic Wear",
+      "telugu": "కుర్తాలు & ఎథ్నిక్ వేర్",
+      "description": "Men's kurtas, women's kurtis, and coordinated kurta sets for everyday and occasion wear.",
+      "group": "clothing",
+      "products": [
+        {
+          "product_id": "NHF-MENS-KURTAS",
+          "name": "Men's Kurtas",
+          "slug": "mens-kurtas",
+          "category_id": "kurtas-ethnic-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-WOMENS-KURTIS",
+          "name": "Women's Kurtis",
+          "slug": "womens-kurtis",
+          "category_id": "kurtas-ethnic-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-KURTA-SETS",
+          "name": "Kurta Sets",
+          "slug": "kurta-sets",
+          "category_id": "kurtas-ethnic-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "festive-collections",
+      "name": "Festive Collections",
+      "telugu": "పండుగ కలెక్షన్",
+      "description": "Wedding wear, festival-special dresses, and designer pieces for celebrations.",
+      "group": "clothing",
+      "products": [
+        {
+          "product_id": "NHF-WEDDING-WEAR",
+          "name": "Wedding Wear",
+          "slug": "wedding-wear",
+          "category_id": "festive-collections",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-FESTIVAL-SPECIAL-DRESSES",
+          "name": "Festival Special Dresses",
+          "slug": "festival-special-dresses",
+          "category_id": "festive-collections",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-DESIGNER-WEAR",
+          "name": "Designer Wear",
+          "slug": "designer-wear",
+          "category_id": "festive-collections",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "womens-wear",
+      "name": "Women's Wear",
+      "telugu": "మహిళల దుస్తులు",
+      "description": "Sarees, kurtis, and dress materials curated for women across styles and occasions.",
+      "group": "clothing",
+      "products": [
+        {
+          "product_id": "NHF-SAREES",
+          "name": "Sarees",
+          "slug": "sarees",
+          "category_id": "womens-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-KURTIS",
+          "name": "Kurtis",
+          "slug": "kurtis",
+          "category_id": "womens-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-DRESS-MATERIALS",
+          "name": "Dress Materials",
+          "slug": "dress-materials",
+          "category_id": "womens-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        }
+      ]
+    },
+    {
+      "id": "mens-wear",
+      "name": "Men's Wear",
+      "telugu": "పురుషుల దుస్తులు",
+      "description": "Kurtas, traditional sets, and casual ethnic wear for men.",
+      "group": "clothing",
+      "products": [
+        {
+          "product_id": "NHF-KURTAS",
+          "name": "Kurtas",
+          "slug": "kurtas",
+          "category_id": "mens-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-TRADITIONAL-SETS",
+          "name": "Traditional Sets",
+          "slug": "traditional-sets",
+          "category_id": "mens-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
+        },
+        {
+          "product_id": "NHF-CASUAL-ETHNIC-WEAR",
+          "name": "Casual Ethnic Wear",
+          "slug": "casual-ethnic-wear",
+          "category_id": "mens-wear",
+          "description": null,
+          "ingredients": [],
+          "variants": [],
+          "best_before": null,
+          "image_file_id": null,
+          "has_full_details": false,
+          "source": "manual"
         }
       ]
     }

@@ -7,15 +7,15 @@ import { Product } from "@/types";
 import { useCart } from "@/context/CartContext";
 import { formatPrice } from "@/lib/products";
 
-const CATEGORY_META: Record<string, { emoji: string; bg: string; text: string }> = {
-  "Karam Podi":      { emoji: "🌶️", bg: "from-orange-100 to-red-50",    text: "text-red-700" },
-  "Masala Powder":   { emoji: "🫙",  bg: "from-yellow-100 to-amber-50",  text: "text-amber-700" },
-  "Ready Mix":       { emoji: "🥣",  bg: "from-green-100 to-emerald-50", text: "text-green-700" },
-  "Delicious Sweet": { emoji: "🍬",  bg: "from-pink-100 to-rose-50",     text: "text-rose-600" },
-  "Spicy Snack":     { emoji: "🍟",  bg: "from-amber-100 to-orange-50",  text: "text-orange-700" },
+const CATEGORY_META: Record<string, { bg: string; text: string }> = {
+  "Karam Podi":      { bg: "from-orange-100 to-red-50",    text: "text-red-700" },
+  "Masala Powder":   { bg: "from-yellow-100 to-amber-50",  text: "text-amber-700" },
+  "Ready Mix":       { bg: "from-green-100 to-emerald-50", text: "text-green-700" },
+  "Delicious Sweet": { bg: "from-pink-100 to-rose-50",     text: "text-rose-600" },
+  "Spicy Snack":     { bg: "from-amber-100 to-orange-50",  text: "text-orange-700" },
 };
 
-const DEFAULT_META = { emoji: "🍱", bg: "from-gray-100 to-gray-50", text: "text-gray-600" };
+const DEFAULT_META = { bg: "from-gray-100 to-gray-50", text: "text-gray-600" };
 
 export default function ProductCard({ product }: { product: Product }) {
   const { addToCart } = useCart();
@@ -34,12 +34,10 @@ export default function ProductCard({ product }: { product: Product }) {
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           />
         ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center gap-2 group-hover:scale-105 transition-transform duration-500">
-            <span className="text-5xl drop-shadow">{meta.emoji}</span>
-          </div>
+          <div className="w-full h-full flex flex-col items-center justify-center group-hover:scale-105 transition-transform duration-500" />
         )}
         <span className="absolute top-2 left-2 bg-white/90 text-xs px-2 py-0.5 rounded-full border border-amber-100 font-medium shadow-sm text-gray-600">
-          {meta.emoji} {product.category}
+          {product.category}
         </span>
       </Link>
 
