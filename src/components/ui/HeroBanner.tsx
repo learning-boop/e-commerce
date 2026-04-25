@@ -11,7 +11,7 @@ export default function HeroBanner() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % SLIDES.length);
-    }, 1000);
+    }, 3000);
     return () => clearInterval(timer);
   }, []);
 
