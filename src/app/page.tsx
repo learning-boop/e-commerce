@@ -111,29 +111,6 @@ export default function HomePage() {
       {/* ── Hero Banner ── */}
       <HeroBanner />
 
-      {/* ── Trust Badges ── */}
-      <section className="bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="grid grid-cols-3 gap-4 text-center">
-            <div className="flex flex-col items-center gap-1.5">
-              <Truck size={22} className="text-amber-600" />
-              <p className="text-xs font-semibold text-gray-700">Free Delivery</p>
-              <p className="text-xs text-gray-400">Orders above ₹500</p>
-            </div>
-            <div className="flex flex-col items-center gap-1.5">
-              <ShieldCheck size={22} className="text-amber-600" />
-              <p className="text-xs font-semibold text-gray-700">No Preservatives</p>
-              <p className="text-xs text-gray-400">Pure &amp; Natural</p>
-            </div>
-            <div className="flex flex-col items-center gap-1.5">
-              <Heart size={22} className="text-amber-600" />
-              <p className="text-xs font-semibold text-gray-700">Homemade with Love</p>
-              <p className="text-xs text-gray-400">Traditional Recipes</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── Category Quick Links ── */}
       <section id="categories" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">Our Categories</h2>
@@ -141,7 +118,7 @@ export default function HomePage() {
           {products.length}+ products across {categories.length} categories — everything made fresh at home
         </p>
         <div className="flex flex-wrap justify-center gap-3">
-          {categories.map((cat) => {
+          {categories.map((cat, idx) => {
             const meta = CATEGORY_META[cat];
             const count = getProductsByCategory(cat).length;
             return (
@@ -151,11 +128,17 @@ export default function HomePage() {
                 className="flex items-center gap-2 bg-amber-50 hover:bg-amber-100 border border-amber-200 hover:border-amber-400 rounded-full px-5 py-2.5 text-sm font-semibold text-gray-700 hover:text-amber-800 transition-all"
               >
                 {meta?.label ?? cat}
-                <span className="text-xs text-gray-400 font-normal">({count})</span>
+                <img src={`/icon/${idx + 1}.png`} alt={meta?.label ?? cat} className="w-5 h-5 object-contain" />
               </Link>
             );
           })}
         </div>
+      </section>
+      {/* ── Trust Badges ── */}
+      <section className="bg-white border-b border-gray-100">
+        <img 
+          src="/strip1.png"
+        />
       </section>
 
       {/* ── Per-Category Sections ── */}
@@ -166,8 +149,10 @@ export default function HomePage() {
         const hasMore = catProducts.length > PREVIEW_COUNT;
 
         return (
-          <section key={cat} className={`py-14 ${meta?.bg ?? "bg-white"}`}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <section key={cat} className={`py-0 ${meta?.bg ?? "bg-white"}`}>
+            <div>
+            </div>
+            <div className="px-4 sm:px-6 lg:px-8">
               {/* Section header */}
               <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8 gap-3">
                 <div>
@@ -185,6 +170,20 @@ export default function HomePage() {
                   View all {catProducts.length} <ArrowRight size={14} />
                 </Link>
               </div>
+
+              {/* Delicious Sweet Banner */}
+              {cat === "Delicious Sweet" && (
+                <div className="mb-6">
+                  <img src="/banner7.png" alt="Delicious Sweets Banner" className="w-full rounded-xl" />
+                </div>
+              )}
+
+              {/* Non-Veg Pickle Banner */}
+              {cat === "Non-Veg Pickle" && (
+                <div className="mb-6">
+                  <img src="/banner6.png" alt="Non-Veg Pickle Banner" className="w-full rounded-xl" />
+                </div>
+              )}
 
               {/* Product grid */}
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -204,64 +203,6 @@ export default function HomePage() {
                 </div>
               )}
             </div>
-
-            {/* Banner 3 after second category */}
-            {idx === 1 && (
-              <div className="relative w-full overflow-hidden mt-14" style={{ minHeight: "240px" }}>
-                <Image
-                  src="/banner3.png"
-                  alt="banner"
-                  fill
-                  className="object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-900/70 via-amber-800/40 to-transparent" />
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 flex flex-col justify-center h-full">
-                  <div className="max-w-lg">
-                    <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-3 drop-shadow-lg">
-                      Global Shipping Available
-                    </h2>
-                    <p className="text-white/80 text-sm md:text-base mb-5">
-                      Delivering authentic Andhra flavours to NRI customers worldwide. Order now and taste home.
-                    </p>
-                    <Link
-                      href="/products"
-                      className="inline-flex items-center gap-2 bg-white text-amber-700 font-semibold px-6 py-2.5 rounded-full text-sm hover:bg-amber-50 transition-colors shadow"
-                    >
-                      Shop Now <ArrowRight size={16} />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* Banner 2 after first category */}
-            {idx === 0 && (
-              <div className="relative w-full overflow-hidden mt-14" style={{ minHeight: "240px" }}>
-                <Image
-                  src="/banner2.png"
-                  alt="logo"
-                  fill
-                  className="object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-900/70 via-amber-800/40 to-transparent" />
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 flex flex-col justify-center h-full">
-                  <div className="max-w-lg">
-                    <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-3 drop-shadow-lg">
-                      Bulk Orders &amp; Gift Packs Available
-                    </h2>
-                    <p className="text-white/80 text-sm md:text-base mb-5">
-                      Perfect for weddings, festivals &amp; corporate gifting. Customised packing available on request.
-                    </p>
-                    <Link
-                      href="/products"
-                      className="inline-flex items-center gap-2 bg-white text-amber-700 font-semibold px-6 py-2.5 rounded-full text-sm hover:bg-amber-50 transition-colors shadow"
-                    >
-                      Explore Products <ArrowRight size={16} />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            )}
           </section>
         );
       })}
