@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "NAARIS WORLD Home Foods",
+    "name": "NAARIS WORLD ",
     "telugu": "నారీస్ హోం ఫుడ్స్",
     "tagline": "Paramparya Ruchulu (Traditional Tastes)",
     "quality_badges": [
@@ -24,7 +24,7 @@
   },
   "metadata": {
     "merged_from": [
-      "NAARIS WORLD Home Foods brochure images",
+      "NAARIS WORLD brochure images",
       "product_data_from_images.json"
     ],
     "total_categories": 20,

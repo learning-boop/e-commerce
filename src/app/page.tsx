@@ -1,109 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ShieldCheck, Truck, Heart, Phone, Home, Package } from "lucide-react";
+import { ArrowRight, ShieldCheck, Truck, Phone, Home, Package } from "lucide-react";
 import { products, categories, galleryImages, getProductsByCategory } from "@/lib/products";
 import ProductCard from "@/components/ui/ProductCard";
 import HeroBanner from "@/components/ui/HeroBanner";
 
-const CATEGORY_META: Record<string, { label: string; desc: string; bg: string }> = {
-  "Karam Podi": {
-    label: "Karam Podi",
-    desc: "Traditional spice powders crafted with fresh ingredients — rich in authentic Andhra flavour.",
-    bg: "bg-gradient-to-br from-orange-50 to-red-50",
-  },
-  "Masala Powder": {
-    label: "Masala Powder",
-    desc: "Pure, home-ground masala blends for everyday cooking — no fillers, no preservatives.",
-    bg: "bg-gradient-to-br from-yellow-50 to-amber-50",
-  },
-  "Ready Mix": {
-    label: "Ready Mix",
-    desc: "Convenient, flavourful ready mixes for classic South Indian dishes — quick meals without compromise.",
-    bg: "bg-white",
-  },
-  "Delicious Sweet": {
-    label: "Delicious Sweets",
-    desc: "Traditional Telugu sweets made with jaggery and natural ingredients — perfect for every celebration.",
-    bg: "bg-gradient-to-br from-pink-50 to-rose-50",
-  },
-  "Spicy Snack": {
-    label: "Spicy Snacks",
-    desc: "Crispy, crunchy homemade snacks with bold Andhra spice — great for any time of day.",
-    bg: "bg-gradient-to-br from-amber-50 to-orange-50",
-  },
-  "Vadiyalu": {
-    label: "Vadiyalu",
-    desc: "Traditional sun-dried handmade Andhra fryums — crispy, light, and full of flavour.",
-    bg: "bg-gradient-to-br from-lime-50 to-green-50",
-  },
-  "Non-Veg Pickle": {
-    label: "Non-Veg Pickles",
-    desc: "Spicy, flavour-packed non-veg pickles made with fresh meat and aromatic homemade spices.",
-    bg: "bg-gradient-to-br from-red-50 to-orange-50",
-  },
-  "NRI Special Products": {
-    label: "NRI Special Products",
-    desc: "Curated combo packs for NRI customers — pickles, karam podis, ready mixes, and sweets bundled for easy overseas ordering.",
-    bg: "bg-gradient-to-br from-blue-50 to-indigo-50",
-  },
-  "International Shipping": {
-    label: "International Shipping",
-    desc: "Products available for global shipping — delivering authentic Andhra flavours to your doorstep anywhere in the world.",
-    bg: "bg-gradient-to-br from-sky-50 to-blue-50",
-  },
-  "NRI Combo Packs": {
-    label: "NRI Combo Packs",
-    desc: "Themed combo packs — Andhra, breakfast, spice, and snacks — assembled for NRI households missing home flavours.",
-    bg: "bg-gradient-to-br from-violet-50 to-purple-50",
-  },
-  "Gift Packs for Abroad": {
-    label: "Gift Packs for Abroad",
-    desc: "Ready-to-ship gift packs for festivals, celebrations, and milestone occasions abroad.",
-    bg: "bg-gradient-to-br from-rose-50 to-pink-50",
-  },
-  "Festival Delivery (NRI)": {
-    label: "Festival Delivery (NRI)",
-    desc: "Festival-special packs timed for Diwali, Sankranti, and Ugadi delivery to international addresses.",
-    bg: "bg-gradient-to-br from-amber-50 to-yellow-50",
-  },
-  "Virtual Shopping Service": {
-    label: "Virtual Shopping Service",
-    desc: "Assisted shopping — place custom grocery, family, or festival orders remotely and have them delivered.",
-    bg: "bg-gradient-to-br from-teal-50 to-cyan-50",
-  },
-  "Sarees": {
-    label: "Sarees",
-    desc: "Handpicked cotton, silk, daily-wear, and festive sarees in traditional Andhra weaves.",
-    bg: "bg-gradient-to-br from-fuchsia-50 to-pink-50",
-  },
-  "Traditional Wear": {
-    label: "Traditional Wear",
-    desc: "Ethnic sets, traditional dresses, and handloom wear for cultural and everyday occasions.",
-    bg: "bg-gradient-to-br from-orange-50 to-amber-50",
-  },
-  "Kurtas & Ethnic Wear": {
-    label: "Kurtas & Ethnic Wear",
-    desc: "Men's kurtas, women's kurtis, and coordinated kurta sets for everyday and occasion wear.",
-    bg: "bg-gradient-to-br from-emerald-50 to-green-50",
-  },
-  "Festive Collections": {
-    label: "Festive Collections",
-    desc: "Wedding wear, festival-special dresses, and designer pieces for celebrations.",
-    bg: "bg-gradient-to-br from-yellow-50 to-orange-50",
-  },
-  "Women's Wear": {
-    label: "Women's Wear",
-    desc: "Sarees, kurtis, and dress materials curated for women across styles and occasions.",
-    bg: "bg-gradient-to-br from-pink-50 to-fuchsia-50",
-  },
-  "Men's Wear": {
-    label: "Men's Wear",
-    desc: "Kurtas, traditional sets, and casual ethnic wear for men.",
-    bg: "bg-gradient-to-br from-slate-50 to-blue-50",
-  },
-};
-
 const PREVIEW_COUNT = 6;
+
+const trendingProducts = products.slice(0, PREVIEW_COUNT);
+const mostVisitedProducts = products.slice(PREVIEW_COUNT, PREVIEW_COUNT * 2);
+const sweetProducts = getProductsByCategory("Delicious Sweet").slice(0, PREVIEW_COUNT);
+const pickleProducts = getProductsByCategory("Non-Veg Pickle").slice(0, PREVIEW_COUNT);
 
 export default function HomePage() {
   return (
@@ -111,101 +18,122 @@ export default function HomePage() {
       {/* ── Hero Banner ── */}
       <HeroBanner />
 
-      {/* ── Category Quick Links ── */}
-      <section id="categories" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">Our Categories</h2>
-        <p className="text-gray-500 text-sm text-center mb-7">
-          {products.length}+ products across {categories.length} categories — everything made fresh at home
-        </p>
-        <div className="flex flex-wrap justify-center gap-3">
-          {categories.map((cat, idx) => {
-            const meta = CATEGORY_META[cat];
-            const count = getProductsByCategory(cat).length;
-            return (
+      {/* ── Category Icon Strip ── */}
+      <section id="categories" className="bg-white py-6 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-lg font-bold text-gray-900 mb-1 text-center">Shop by Category</h2>
+          <p className="text-gray-400 text-xs text-center mb-5">
+            {products.length}+ products across {categories.length} categories
+          </p>
+          <div className="flex overflow-x-auto gap-4 pb-2 scrollbar-hide justify-start sm:justify-center">
+            {categories.map((cat, idx) => (
               <Link
                 key={cat}
                 href={`/products?cat=${encodeURIComponent(cat)}`}
-                className="flex items-center gap-2 bg-amber-50 hover:bg-amber-100 border border-amber-200 hover:border-amber-400 rounded-full px-5 py-2.5 text-sm font-semibold text-gray-700 hover:text-amber-800 transition-all"
+                className="flex flex-col items-center gap-2 min-w-[72px] group"
               >
-                {meta?.label ?? cat}
-                <img src={`/icon/${idx + 1}.png`} alt={meta?.label ?? cat} className="w-5 h-5 object-contain" />
+                <div className="w-16 h-16 rounded-full bg-amber-50 border-2 border-amber-100 group-hover:border-amber-400 group-hover:bg-amber-100 transition-all flex items-center justify-center overflow-hidden shadow-sm">
+                  <img src={`/icon/${idx + 1}.png`} alt={cat} className="w-10 h-10 object-contain" />
+                </div>
+                <span className="text-[11px] font-semibold text-gray-700 group-hover:text-amber-700 text-center leading-tight max-w-[72px] transition-colors">
+                  {cat}
+                </span>
               </Link>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </section>
-      {/* ── Trust Badges ── */}
+
+      {/* ── Trust Strip ── */}
       <section className="bg-white border-b border-gray-100">
-        <img 
-          src="/strip1.png"
-        />
+        <img src="/strip1.png" alt="trust badges" />
       </section>
 
-      {/* ── Per-Category Sections ── */}
-      {categories.map((cat, idx) => {
-        const meta = CATEGORY_META[cat];
-        const catProducts = getProductsByCategory(cat);
-        const preview = catProducts.slice(0, PREVIEW_COUNT);
-        const hasMore = catProducts.length > PREVIEW_COUNT;
-
-        return (
-          <section key={cat} className={`py-0 ${meta?.bg ?? "bg-white"}`}>
+      {/* ── Trending Products ── */}
+      <section className="py-10 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-6">
             <div>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">Trending Products</h2>
+              <p className="text-gray-500 text-sm mt-1">Most popular picks right now</p>
             </div>
-            <div className="px-4 sm:px-6 lg:px-8">
-              {/* Section header */}
-              <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8 gap-3">
-                <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">
-                      {meta?.label ?? cat}
-                    </h2>
-                  </div>
-                  <p className="text-gray-500 text-sm max-w-lg">{meta?.desc}</p>
-                </div>
-                <Link
-                  href={`/products?cat=${encodeURIComponent(cat)}`}
-                  className="inline-flex items-center gap-1 text-sm text-amber-700 hover:text-amber-900 font-semibold whitespace-nowrap transition-colors"
-                >
-                  View all {catProducts.length} <ArrowRight size={14} />
-                </Link>
-              </div>
+            <Link href="/products" className="inline-flex items-center gap-1 text-sm text-amber-700 hover:text-amber-900 font-semibold transition-colors">
+              View all <ArrowRight size={14} />
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {trendingProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
 
-              {/* Delicious Sweet Banner */}
-              {cat === "Delicious Sweet" && (
-                <div className="mb-6">
-                  <img src="/banner7.png" alt="Delicious Sweets Banner" className="w-full rounded-xl" />
-                </div>
-              )}
-
-              {/* Non-Veg Pickle Banner */}
-              {cat === "Non-Veg Pickle" && (
-                <div className="mb-6">
-                  <img src="/banner6.png" alt="Non-Veg Pickle Banner" className="w-full rounded-xl" />
-                </div>
-              )}
-
-              {/* Product grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-                {preview.map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
-
-              {hasMore && (
-                <div className="mt-6 text-center">
-                  <Link
-                    href={`/products?cat=${encodeURIComponent(cat)}`}
-                    className="inline-flex items-center gap-2 border-2 border-amber-500 text-amber-700 hover:bg-amber-500 hover:text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all"
-                  >
-                    See all {catProducts.length} {meta?.label ?? cat} <ArrowRight size={14} />
-                  </Link>
-                </div>
-              )}
+      {/* ── Delicious Sweets Banner + Products ── */}
+      <section className="py-10 bg-gradient-to-br from-pink-50 to-rose-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-4">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">Delicious Sweets</h2>
+              <p className="text-gray-500 text-sm mt-1">Traditional Telugu sweets made with jaggery &amp; natural ingredients</p>
             </div>
-          </section>
-        );
-      })}
+            <Link href={`/products?cat=${encodeURIComponent("Delicious Sweet")}`} className="inline-flex items-center gap-1 text-sm text-amber-700 hover:text-amber-900 font-semibold transition-colors">
+              View all <ArrowRight size={14} />
+            </Link>
+          </div>
+          <div className="mb-6">
+            <img src="/banner7.png" alt="Delicious Sweets Banner" className="w-full rounded-xl" />
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {sweetProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Most Visited Products ── */}
+      <section className="py-10 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-6">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">Most Visited</h2>
+              <p className="text-gray-500 text-sm mt-1">Customer favourites you don&apos;t want to miss</p>
+            </div>
+            <Link href="/products" className="inline-flex items-center gap-1 text-sm text-amber-700 hover:text-amber-900 font-semibold transition-colors">
+              View all <ArrowRight size={14} />
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {mostVisitedProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Non-Veg Pickles Banner + Products ── */}
+      <section className="py-10 bg-gradient-to-br from-red-50 to-orange-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-4">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">Non-Veg Pickles</h2>
+              <p className="text-gray-500 text-sm mt-1">Spicy, flavour-packed pickles made with fresh meat &amp; homemade spices</p>
+            </div>
+            <Link href={`/products?cat=${encodeURIComponent("Non-Veg Pickle")}`} className="inline-flex items-center gap-1 text-sm text-amber-700 hover:text-amber-900 font-semibold transition-colors">
+              View all <ArrowRight size={14} />
+            </Link>
+          </div>
+          <div className="mb-6">
+            <img src="/banner6.png" alt="Non-Veg Pickle Banner" className="w-full rounded-xl" />
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {pickleProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ── Gallery ── */}
       <section className="bg-amber-50 py-14">

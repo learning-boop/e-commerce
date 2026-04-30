@@ -8,8 +8,8 @@ import Footer from "@/components/layout/Footer";
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 export const metadata: Metadata = {
-  title: "NAARIS WORLD Home Foods — Homemade Spice Powders, Sweets & Snacks",
-  description: "NAARIS WORLD Home Foods offers authentic homemade karam podi, masala powders, ready mixes, traditional sweets and spicy snacks — no preservatives, freshly made with traditional recipes.",
+  title: "NAARIS WORLD — Homemade Spice Powders, Sweets & Snacks",
+  description: "NAARIS WORLD offers authentic homemade karam podi, masala powders, ready mixes, traditional sweets and spicy snacks — no preservatives, freshly made with traditional recipes.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

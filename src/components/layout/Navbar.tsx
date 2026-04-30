@@ -42,7 +42,7 @@ export default function Navbar() {
             />
             <div className="flex flex-col leading-tight">
               <span className="text-sm sm:text-lg md:text-2xl font-extrabold text-amber-700 tracking-tight">
-                NAARIS WORLD Home Foods
+                NAARIS WORLD
               </span>
               <span className="text-[10px] sm:text-xs text-gray-400 tracking-wide">Homemade · Natural · Fresh</span>
             </div>

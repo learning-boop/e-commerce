@@ -17,7 +17,7 @@ export default function Footer() {
                 className="h-12 w-auto object-contain"
               />
             </div>
-            <p className="text-lg font-extrabold text-amber-700 mb-1">NAARIS WORLD Home Foods</p>
+            <p className="text-lg font-extrabold text-amber-700 mb-1">NAARIS WORLD</p>
             <p className="text-xs text-gray-400 mb-3 uppercase tracking-wider">Homemade · Natural · Fresh</p>
             <p className="text-sm text-gray-500 leading-relaxed">
               Authentic homemade spice powders, masalas, ready mixes, sweets &amp; snacks — no preservatives, no compromises.
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-gray-100 pt-6 text-center text-xs text-gray-400">
-          © {new Date().getFullYear()} NAARIS WORLD Home Foods. All rights reserved. Made with ❤️ in Andhra Pradesh.
+          © {new Date().getFullYear()} NAARIS WORLD. All rights reserved. Made with ❤️ in Andhra Pradesh.
         </div>
       </div>
     </footer>

@@ -37,38 +37,65 @@ function ProductsContent() {
         </p>
       </div>
 
-      {/* Category filters */}
-      <div className="flex items-center gap-2 flex-wrap mb-8">
-        <button
-          onClick={() => setActiveCategory("All")}
-          className={clsx(
-            "px-4 py-1.5 rounded-full text-sm font-medium border transition-colors",
-            activeCategory === "All"
-              ? "bg-amber-600 text-white border-amber-600"
-              : "text-gray-600 border-gray-200 hover:border-amber-400 hover:text-amber-700"
-          )}
-        >
-          All ({products.length})
-        </button>
-        {categories.map((cat) => {
-          const count = products.filter((p) => p.category === cat).length;
-          return (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={clsx(
-                "px-4 py-1.5 rounded-full text-sm font-medium border transition-colors",
-                activeCategory === cat
-                  ? "bg-amber-600 text-white border-amber-600"
-                  : "text-gray-600 border-gray-200 hover:border-amber-400 hover:text-amber-700"
-              )}
-            >
-              {CATEGORY_META[cat]?.emoji} {cat} ({count})
-            </button>
-          );
-        })}
+      {/* Category filters — Flipkart-style icon strip */}
+      <div className="mb-8">
+        <div className="flex overflow-x-auto gap-4 pb-2 scrollbar-hide">
+          {/* All button */}
+          <button
+            onClick={() => setActiveCategory("All")}
+            className="flex flex-col items-center gap-2 min-w-[72px] group"
+          >
+            <div className={clsx(
+              "w-16 h-16 rounded-full flex items-center justify-center border-2 transition-all shadow-sm",
+              activeCategory === "All"
+                ? "bg-amber-500 border-amber-500"
+                : "bg-amber-50 border-amber-100 group-hover:border-amber-400 group-hover:bg-amber-100"
+            )}>
+              <span className={clsx("text-2xl font-bold", activeCategory === "All" ? "text-white" : "text-amber-600")}>★</span>
+            </div>
+            <span className={clsx(
+              "text-[11px] font-semibold text-center leading-tight max-w-[72px]",
+              activeCategory === "All" ? "text-amber-700" : "text-gray-700 group-hover:text-amber-700"
+            )}>
+              All ({products.length})
+            </span>
+          </button>
 
-        <div className="ml-auto flex items-center gap-2 text-sm text-gray-500">
+          {categories.map((cat, idx) => {
+            const count = products.filter((p) => p.category === cat).length;
+            const isActive = activeCategory === cat;
+            return (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className="flex flex-col items-center gap-2 min-w-[72px] group"
+              >
+                <div className={clsx(
+                  "w-16 h-16 rounded-full flex items-center justify-center border-2 transition-all shadow-sm overflow-hidden",
+                  isActive
+                    ? "border-amber-500 bg-amber-100"
+                    : "bg-amber-50 border-amber-100 group-hover:border-amber-400 group-hover:bg-amber-100"
+                )}>
+                  <img
+                    src={`/icon/${idx + 1}.png`}
+                    alt={cat}
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
+                <span className={clsx(
+                  "text-[11px] font-semibold text-center leading-tight max-w-[72px]",
+                  isActive ? "text-amber-700" : "text-gray-700 group-hover:text-amber-700"
+                )}>
+                  {cat}
+                  <br />
+                  <span className="text-gray-400 font-normal">({count})</span>
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="flex justify-end items-center gap-2 text-sm text-gray-500 mt-3">
           <SlidersHorizontal size={14} />
           <span>{filtered.length} items</span>
         </div>
